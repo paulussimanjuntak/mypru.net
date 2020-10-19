@@ -10,7 +10,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <title>MYPRU</title>
+        <title>MyPru</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -23,6 +23,25 @@ const App = ({ Component, pageProps }) => {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+
+      <style jsx global>{`
+        body {
+          font-size: 14px;
+          padding-top: 64px;
+        }
+        .hover-pointer:hover{
+          cursor: pointer;
+        }
+        .fw-500 {
+          font-weight: 500 !important;
+        }
+
+        /* ANT DROPDOWN */
+        .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+          color: rgba(0, 0, 0, 0.7);
+        }
+        /* ANT DROPDOWN */
+      `}</style>
     </>
   );
 };

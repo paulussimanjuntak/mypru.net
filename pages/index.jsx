@@ -1,7 +1,9 @@
 const Home = () => {
   return(
     <>
-      <h1>Home</h1>
+      {[...Array(5)].map((_,i) => (
+        <h1 className="mb-5" key={i}>Home</h1>
+      ))}
     </>
   )
 }
