@@ -1,24 +1,28 @@
 import Head from "next/head";
+
 import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import Layout from "components/Layout";
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <title>Tridatu Bali ID</title>
+        <title>MYPRU</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-        <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/tridatu-icon.png" />
+        <link rel="icon" href="/static/images/ico.png" />
         <link rel="stylesheet" href="/static/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="/static/css/utility.min.css" />
       </Head>
 
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 };
