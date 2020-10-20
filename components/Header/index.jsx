@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-const nasabahMenuData = [
+export const nasabahMenuData = [
   { label: "Cara Klaim" },
   { label: "Testimoni Klaim" },
   { label: "Cara Pembayaran" },
