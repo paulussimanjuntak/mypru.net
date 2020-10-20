@@ -1,7 +1,11 @@
 import Head from "next/head";
 
 import "antd/dist/antd.css";
+import "antd-button-color/dist/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import Layout from "components/Layout";
 
@@ -10,7 +14,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <title>MyPru</title>
+        <title>MyPru | Your Trusted Insurance Planner</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -29,6 +33,10 @@ const App = ({ Component, pageProps }) => {
           font-size: 14px;
           padding-top: 64px;
         }
+        section {
+          margin-top: 1.5rem;
+          margin-bottom: 5rem;
+        }
         .hover-pointer:hover{
           cursor: pointer;
         }
@@ -41,6 +49,27 @@ const App = ({ Component, pageProps }) => {
           color: rgba(0, 0, 0, 0.7);
         }
         /* ANT DROPDOWN */
+
+        /*SLICK-SLIDE*/
+        .slick-slide {
+          padding: 0px 15px;
+        }
+        .slick-list {
+          margin: 0 -1em;
+        }
+        .slick-prev, .slick-next {
+          font-size: 15px !important;
+        }
+        .slick-prev:before, .slick-next:before  {
+          content: '' !important;
+        }
+        .slick-slider > i.arrow-slick:before, i.arrow-slick:before{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        /*SLICK-SLIDE*/
       `}</style>
     </>
   );

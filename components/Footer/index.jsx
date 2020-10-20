@@ -1,7 +1,8 @@
-import { Button, Space } from "antd";
+import { Space } from "antd";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import Button from "antd-button-color";
 
 import { nasabahMenuData } from "../Header";
 
@@ -19,17 +20,17 @@ const Footer = () => {
               </div>
               <Space>
                 <Button
-                  type="primary"
+                  type="lightdark"
                   className="shadow-none"
                   icon={<i className="fab fa-instagram" />}
                 />
                 <Button
-                  type="primary"
+                  type="lightdark"
                   className="shadow-none"
                   icon={<i className="fab fa-facebook-f" />}
                 />
                 <Button
-                  type="primary"
+                  type="lightdark"
                   className="shadow-none"
                   icon={<i className="fab fa-youtube" />}
                 />
