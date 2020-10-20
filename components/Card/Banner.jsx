@@ -5,15 +5,15 @@ const CardBanner = ({ image }) => {
   return (
     <>
       <Card className="border-0">
-        <Link href="/promo" as="/promo">
+        {/* <Link href="/promo" as="/promo"> */}
           <a className="text-decoration-none text-dark">
             <img
-              className="mx-auto d-block img-fit w-100 rounded"
+              className="mx-auto d-block img-fit w-100 rounded-0"
               src={image}
               alt="Tridatu Bali ID"
             />
           </a>
-        </Link>
+        {/* </Link> */}
       </Card>
     </>
   );

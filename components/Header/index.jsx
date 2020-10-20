@@ -3,50 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-export const nasabahMenuData = [
-  { label: "Cara Klaim" },
-  { label: "Testimoni Klaim" },
-  { label: "Cara Pembayaran" },
-  { label: "Informasi Perusahaan" },
-  { label: "Konsultasi" },
-]
-
-const careerMenuData = [
-  { label: "Benefit jadi agen" },
-  { label: "Sistem Business" },
-  { label: "Jenjang karir" },
-]
-
-const productMenuData = [
-  {
-    label: "Proteksi Kesehatan",
-    children: [
-      { label: "Pruprime Healthcare Plus" },
-      { label: "PSS" },
-    ]
-  },
-  {
-    label: "Proteksi Penghasilan",
-    children: [
-      { label: "PRU TOP" },
-      { label: "PCB 88" },
-    ]
-  },
-  {
-    label: "Persiapan Dana Waris",
-    children: [
-      { label: "PRU Cinta" },
-      { label: "Linkterm" },
-    ]
-  },
-  {
-    label: "Asuransi Karyawan",
-    children: [
-      { label: "Pru Corporate" },
-      { label: "Pruworks" },
-    ]
-  }
-]
+import { nasabahMenuData, careerMenuData, productMenuData } from "data/navbar";
 
 const productMenu = (
   <Menu className="d-none d-lg-block user-select-none">

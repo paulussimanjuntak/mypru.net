@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "antd-button-color";
 
-import { nasabahMenuData } from "../Header";
+import { nasabahMenuData } from "data/navbar";
 
 const year = new Date();
 
