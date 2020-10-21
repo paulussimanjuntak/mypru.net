@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 import { Dropdown, Menu } from "antd";
+import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -34,6 +36,8 @@ const nasabahMenu = (
 )
 
 const Header = () => {
+  const router = useRouter()
+
   return(
     <>
       <Navbar
@@ -72,6 +76,7 @@ const Header = () => {
                 trigger={['hover']}
                 placement="bottomCenter" 
                 overlayClassName="position-fixed"
+                onClick={() => router.push("/products")}
               >
                 <Nav.Link className="mx-2">
                   Produk Kami
@@ -102,9 +107,11 @@ const Header = () => {
                 </Nav.Link>
               </Dropdown>
 
-              <Nav.Link>
-                Artikel
-              </Nav.Link>
+              <Link href="/articles">
+                <Nav.Link as="a">
+                  Artikel
+                </Nav.Link>
+              </Link>
 
             </Nav>
           </Navbar.Collapse>

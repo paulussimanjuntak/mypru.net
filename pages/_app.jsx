@@ -102,6 +102,11 @@ const App = ({ Component, pageProps }) => {
           border-color: rgba(40, 167, 69, 0.1);
         }
         /* ANT BUTTON */
+        /* ANT ICON */
+        .anticon {
+          vertical-align: 0.1em;
+        }
+        /* ANT ICON */
 
         /*SLICK-SLIDE*/
         .slick-slide {

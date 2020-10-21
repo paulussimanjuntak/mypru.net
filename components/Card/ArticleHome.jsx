@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Card from "react-bootstrap/Card";
 
-const Article = ({ article }) => {
+const ArticleHome = ({ article }) => {
   return(
     <>
-      <Card className="mb-4 border-0 shadow-none">
+      <Card className="mb-4 border-0 shadow-sm border-type-1">
         <div className="promotion-image">
           <Card.Img
             variant="top"
@@ -14,7 +14,7 @@ const Article = ({ article }) => {
             className="img-fit img-article"
           />
         </div>
-        <Card.Body className="py-3 px-0">
+        <Card.Body className="p-3">
           <Link href={`articles/${article.link}`} as={`articles/${article.link}`}>
             <a className="text-decoration-none">
               <Card.Text className="truncate-3 text-dark fs-14-s">
@@ -37,4 +37,4 @@ const Article = ({ article }) => {
   )
 }
 
-export default Article
+export default ArticleHome

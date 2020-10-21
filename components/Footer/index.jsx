@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <footer className="border-top">
-        <Container className="pt-3">
+        <Container className="pt-4 pt-sm-5 pt-md-5 pt-lg-5">
           <Row className="justify-content-between">
             <Col lg={4} sm={12}>
               <div className="footer-logo">
@@ -71,8 +71,8 @@ const Footer = () => {
           </Row>
           <hr />
         </Container>
-        <Container className="mb-4">
-          <p>
+        <Container>
+          <p className="pb-3">
             Copyright &copy; {year.getFullYear()} All Rights Reserved by{" "}
             <a className="link-section">MyPru.net</a>
           </p>
