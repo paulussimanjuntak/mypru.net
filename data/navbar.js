@@ -42,3 +42,11 @@ export const productMenuData = [
     ]
   }
 ]
+
+export const mobileNavigation = [
+  { label: "Home", link: "/" },
+  { label: "Produk Kami", link: "/products" },
+  { label: "Peluang Karir", link: "/career" },
+  { label: "Layanan Nasabah", link: "/customer" },
+  { label: "Artikel", link: "/articles" },
+]

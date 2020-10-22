@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-import { nasabahMenuData, careerMenuData, productMenuData } from "data/navbar";
+import { nasabahMenuData, careerMenuData, productMenuData, mobileNavigation } from "data/navbar";
 
 const productMenu = (
   <Menu className="d-none d-lg-block user-select-none">
@@ -138,15 +138,13 @@ const Header = () => {
         onClose={onClose}
         visible={visible}
       >
-        {productMenuData.map(data => {
-          return data.children.map((child, i) => (
-            <Link href={`/products/${child.link}`} key={i}>
-              <p>
-                <a className="text-decoration-none text-dark">{child.label}</a>
-              </p>
-            </Link>
-          ))
-        })}
+        {mobileNavigation.map((data, i) => (
+          <Link href={data.link} key={i}>
+            <p>
+              <a className="text-decoration-none text-dark">{data.label}</a>
+            </p>
+          </Link>
+        ))}
       </Drawer>
 
 
