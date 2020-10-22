@@ -1,19 +1,18 @@
-
 export const productsData = [
   {
     title: "Proteksi Kesehatan",
     description: `Setiap tahunnya, biaya kesehatan di Indonesia selalu mengalami kenaikan bahkan jauh melebihi tingkat inflasi. Menurut hasil survei tentang tren kenaikan biaya kesehatan di berbagai negara. bahwa kenaikan biaya kesehatan rata-rata secara kotor (gross), sejak tahun 2017 hingga 2019, berkisar antara 10 persen hingga 11 persen. Persentase kenaikan biaya kesehatan ini terbukti jauh lebih tinggi ketimbang inflasi. <br /> <br />Untuk itu penting sekali mempunyai Proteksi Kesehatan  yang bisa memberikan Kenyamanan dan Kecepatan dalam Perawatan di Rumah Sakit. Untuk itu Prudential hadir memberikan Solusi Proteksi Kesehatan yang Komprehensif yaitu : <br /><br />`,
     products: [
-      { label: "PRUPrime Healthcare Plus" },
-      { label: "PRUSolusi Sehat" },
+      { label: "PRUPrime Healthcare Plus", icon: "fal fa-hand-holding-medical", link: "pruprime-healthcare-plus" },
+      { label: "PRUSolusi Sehat", icon: "fal fa-users-medical", link: "prusolusi-sehat" },
     ]
   },
   {
     title: "Proteksi Penghasilan",
     description: `Seberapa Penting Penghasilan kamu buat Keluarga..? <br /> Pastinya sangat Penting. <br /> <br /> Proteksi Penghasilan merupakan Perlindungan atas nilai ekonomi seseorang terhadap resiko - resiko yang bisa terjadi sewaktu - waktu baik itu Resiko Tidak Pasti (Sakit Kritis/Cacat) atau Resiko Pasti (Tutup Usia). Idealnya  Nilai Pertanggungan untuk Proteksi Penghasilan adalah 6x Penghasilan Tahunan.<br /> <br /> Prudential Indonesia mempunyai 2 Produk Unggulan yaitu : <br /><br />`,
     products: [
-      { label: "PRUTotal Critical Protection (PRUTop)" },
-      { label: "PRUCritical Benefit 88" },
+      { label: "PRUTotal Critical Protection (PRUTop)", icon: "fal fa-user-shield", link: "prutotal-critical-protection" },
+      { label: "PRUCritical Benefit 88", icon: "fal fa-atom", link: "prucritical-benefit-88" },
     ]
   },
   {
@@ -41,7 +40,8 @@ export const productsData = [
       </p>
     `,
     products: [
-      { label: "Asuransi Jiwa Syariah PRUCinta" },
+      { label: "Asuransi Jiwa Syariah PRUCinta", icon: "fal fa-gift", link: "prucinta" },
+      { label: "Linkterm", icon: "fal fa-gift", link: "prulinkterm" },
     ]
   },
   {
@@ -105,13 +105,8 @@ export const productsData = [
       </div>
     `,
     products: [
-      { label: "Pru Corporate" },
-      { label: "Pruwork" },
+      { label: "PRUCorporate", icon: "fal fa-users-crown", link: "prucorporate" },
+      { label: "PRUWork", icon: "fal fa-user-hard-hat", link: "pruwork" },
     ]
-  },
-  {
-    title: "Peluang Karir",
-    description: null,
-    products: [ ]
   },
 ]

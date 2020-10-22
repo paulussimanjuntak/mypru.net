@@ -89,6 +89,7 @@ const Header = () => {
                 trigger={['hover']}
                 placement="bottomCenter" 
                 overlayClassName="position-fixed"
+                onClick={() => router.push("/career")}
               >
                 <Nav.Link>
                   Peluang Karir
@@ -101,6 +102,7 @@ const Header = () => {
                 trigger={['hover']}
                 placement="bottomCenter" 
                 overlayClassName="position-fixed"
+                onClick={() => router.push("/customer")}
               >
                 <Nav.Link className="mx-2">
                   Layanan Nasabah

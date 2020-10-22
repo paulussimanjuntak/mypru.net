@@ -22,16 +22,19 @@ const Footer = () => {
                 <Button
                   type="lightdark"
                   className="shadow-none"
+                  style={{ borderRadius: "5px" }}
                   icon={<i className="fab fa-instagram" />}
                 />
                 <Button
                   type="lightdark"
                   className="shadow-none"
+                  style={{ borderRadius: "5px" }}
                   icon={<i className="fab fa-facebook-f" />}
                 />
                 <Button
                   type="lightdark"
                   className="shadow-none"
+                  style={{ borderRadius: "5px" }}
                   icon={<i className="fab fa-youtube" />}
                 />
               </Space>

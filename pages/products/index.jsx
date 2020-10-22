@@ -1,19 +1,23 @@
+import { useRouter } from 'next/router'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Media from 'react-bootstrap/Media'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 
 import { productsData } from 'data/product'
 
 const Product = () => {
+  const router = useRouter()
+
   return(
     <>
       <Jumbotron className="img-banner-article mb-0">
         <Container>
           <h1 className="title-banner fs-24-s">Produk Kami</h1>
           <p className="sub-banner fs-14-s text-wrap">
-            Kami hadir untuk memenuhi kebutuhan perlindungan diri Anda dan orang-orang yang Anda cintai
+            Kami peduli dengan kesahatan dan masa depan Anda
           </p>
         </Container>
       </Jumbotron>
@@ -24,17 +28,26 @@ const Product = () => {
             <Row>
               <Col md={4} lg={4}>
                 <div className="title-group-product-sticky">
-                  <h3 className="fs-20-s title-group-product">{data.title}</h3>
+                  <h3 className="fs-22-s title-group-product">{data.title}</h3>
                 </div>
               </Col>
               <Col md={8} lg={8}>
                 <div dangerouslySetInnerHTML={{__html: data.description}} />
                 <Row>
                   {data.products && data.products.length > 0 && data.products.map((product, i) => (
-                    <Col key={i} className="product-col mt-md-0 col-sm-6 col-xs-12">
-                      <Card className="border-type-1 shadow-sm">
+                    <Col key={i} sm={12} md={12} lg={6} className="product-col mt-lg-0">
+                      <Card className="h-100 product-item hover-pointer" onClick={() => router.push(`/products/${product.link}`)}>
                         <Card.Body>
-                          {product.label}
+                          <Media className="align-items-center h-100">
+                            <p className="align-self-center mr-3 mb-0">
+                              <i className={`fa-2x ${product.icon}`} />
+                            </p>
+                            <Media.Body>
+                              <p className="align-self-center mb-0">
+                                {product.label}
+                              </p>
+                            </Media.Body>
+                          </Media>
                         </Card.Body>
                       </Card>
                     </Col>
@@ -95,8 +108,21 @@ const Product = () => {
           white-space: pre-line;
         }
 
+        :global(.product-item){
+          border-radius: 4px;
+          background: #fff;
+          cursor: pointer;
+          box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        }
+
+        :global(.product-item:hover){
+          transform: scale(1.01);
+          box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
         :global(.product-col:last-of-type){
-          // margin-top: 1rem;
+          margin-top: 1rem;
         }
 
         @media only screen and (max-width: 767px) {

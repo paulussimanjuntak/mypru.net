@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Button from "antd-button-color";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 import Image from 'react-bootstrap/Image'
 import Container from "react-bootstrap/Container";
 
@@ -120,7 +121,12 @@ const Home = () => {
 
       <Container>
         <section className="pb-5">
-          <h3 className="fs-20-s text-center mb-4">Artikel</h3>
+          <h3 className="fs-20-s mb-4">
+            Artikel
+            <Link href="/articles">
+              <a className="float-right fs-12 pt-3 text-black-50">Lihat Semua</a>
+            </Link>
+          </h3>
           <Row>
             {articleData.slice(0,3).map((data, i) => (
               <Col md={4} sm={6} key={i}>
@@ -128,29 +134,48 @@ const Home = () => {
               </Col>
             ))}
           </Row>
-          <div className="text-center">
-            <Link href="/articles">
-              <a>
-                <Button type="lightdark" size="large" shape="round">
-                  Lihat Semua
-                </Button>
-              </a>
-            </Link>
-          </div>
+          {/* <div className="text-center"> */}
+          {/*   <Link href="/articles"> */}
+          {/*     <a> */}
+          {/*       <Button type="lightdark" size="large" shape="round"> */}
+          {/*         Lihat Semua */}
+          {/*       </Button> */}
+          {/*     </a> */}
+          {/*   </Link> */}
+          {/* </div> */}
         </section>
       </Container>
 
-      <section style={{ backgroundColor: "rgb(250 250 250)" }}>
-        <Container>
-          <h3 className="fs-20-s text-center mb-4">Tentang Kami</h3>
-          <p className="text-center">
-            Kami merupakan Partner bisnis dari PT. Prudential Life Assurance sejak 2012 dan bernaung dibawah Sahadewa Agency yang Berkantor di Jl. Hangtuah No 1 Sanur - Bali. Tugas kami adalah memberikan solusi terbaik untuk perencanaan asuransi sesuai dengan kebutuhan dan kemampuan anda. serta Memberikan pelayanan yang profesional dan berintegritas untuk melayani masyarakat secara luas di seluruh Indonesia
-          </p>
+      <section className="pt-0">
+        <Container className="about-section">
+          <Card.Body className="p-5">
+            <Row className="align-items-center">
+              <Col sm={12} md={6}>
+                <img src="/static/images/about-item.png" className="w-100" />
+              </Col>
+              <Col sm={12} md={6}>
+                <h3 className="fs-20-s mb-4">Tentang Kami</h3>
+                <p className="text-justify fs-16 mb-0">
+                  Kami merupakan Partner bisnis dari PT. Prudential Life Assurance sejak 2012 dan bernaung dibawah Sahadewa Agency yang Berkantor di Jl. Hangtuah No 1 Sanur - Bali. Tugas kami adalah memberikan solusi terbaik untuk perencanaan asuransi sesuai dengan kebutuhan dan kemampuan anda. serta Memberikan pelayanan yang profesional dan berintegritas untuk melayani masyarakat secara luas di seluruh Indonesia.
+                </p>
+              </Col>
+            </Row>
+          </Card.Body>
         </Container>
       </section>
 
-      <section className="pt-0 pb-2" style={{ backgroundColor: "rgb(250 250 250)" }}>
+      {/* <section className="aboutus-section"> */}
+      {/*   <Container className="bg-danger"> */}
+      {/*     <h3 className="fs-20-s text-center mb-4">Tentang Kami</h3> */}
+      {/*     <p className="text-center fs-16"> */}
+      {/*       Kami merupakan Partner bisnis dari PT. Prudential Life Assurance sejak 2012 dan bernaung dibawah Sahadewa Agency yang Berkantor di Jl. Hangtuah No 1 Sanur - Bali. Tugas kami adalah memberikan solusi terbaik untuk perencanaan asuransi sesuai dengan kebutuhan dan kemampuan anda. serta Memberikan pelayanan yang profesional dan berintegritas untuk melayani masyarakat secara luas di seluruh Indonesia. */}
+      {/*     </p> */}
+      {/*   </Container> */}
+      {/* </section> */}
+
+      <section className="pb-2 pt-0">
         <Container>
+          <h3 className="fs-20-s text-center mb-4">Tim Kami</h3>
           <Row className="mb-4">
             {agentData.map((data, i) => (
               <Col className="text-center mb-3" key={i}>
@@ -159,7 +184,7 @@ const Home = () => {
                   src="/static/images/profile.png" 
                   className="img-fit mb-2 mb-md-0 mb-lg-0" 
                 />
-                <h5 className="fs-18-s mt-3">{data.name}</h5>
+                <h5 className="fs-16-s mt-3">{data.name}</h5>
                 <p>
                   {data.description}
                 </p>
@@ -170,6 +195,18 @@ const Home = () => {
       </section>
 
       <style jsx>{`
+        // .aboutus-section{
+        //   position: relative;
+        //   background-image: url("/static/images/aboutus-banner.png");
+        //   background-size: cover;
+        // }
+        //
+        
+        :global(.about-section){
+          border-radius: 10px;
+          background-color: #f5f5f5;
+        }
+
         @media only screen and (min-width: 600px) {
           :global(.banner-section .slick-prev, .banner-section .slick-next) {
             opacity: 0;
