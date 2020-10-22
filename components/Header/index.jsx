@@ -132,15 +132,21 @@ const Header = () => {
       </Navbar>
 
       <Drawer
-        title="Basic Drawer"
         placement="right"
+        zIndex="1030"
         closable={false}
         onClose={onClose}
         visible={visible}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        {productMenuData.map(data => {
+          return data.children.map((child, i) => (
+            <Link href={`/products/${child.link}`} key={i}>
+              <p>
+                <a className="text-decoration-none text-dark">{child.label}</a>
+              </p>
+            </Link>
+          ))
+        })}
       </Drawer>
 
 
