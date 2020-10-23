@@ -1,9 +1,9 @@
 export const nasabahMenuData = [
-  { label: "Cara Klaim" },
-  { label: "Testimoni Klaim" },
-  { label: "Cara Pembayaran" },
-  { label: "Informasi Perusahaan" },
-  { label: "Konsultasi" },
+  { label: "Cara Klaim", link: "our-company" },
+  { label: "Testimoni Klaim", link: "our-company" },
+  { label: "Cara Pembayaran", link: "our-company" },
+  { label: "Informasi Perusahaan", link: "our-company" },
+  { label: "Konsultasi", link: "our-company" },
 ]
 
 export const careerMenuData = [

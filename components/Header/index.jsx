@@ -41,7 +41,9 @@ const nasabahMenu = (
   <Menu className="d-none d-lg-block user-select-none">
     {nasabahMenuData.map((data, i) => (
       <Menu.Item key={i} className="text-capitalize">
-        {data.label}
+        <Link href={`/customer/${data.link}`}>
+          <a className="text-decoration-none">{data.label}</a>
+        </Link>
       </Menu.Item>
     ))}
   </Menu>
