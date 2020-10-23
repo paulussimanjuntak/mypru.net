@@ -58,14 +58,18 @@ const Home = () => {
                 seperti BPJS Kesehatan dari pemerintah, namun dengan pelayanan
                 yang premium, terbaik, dan nyaman.
               </p>
-              <Button
-                type="success"
-                size="large"
-                shape="round"
-                className="shadow-none mb-3"
-              >
-                PRUSolusi Sehat
-              </Button>
+              <Link href="/products/prusolusi-sehat">
+                <a>
+                  <Button
+                    type="success"
+                    size="large"
+                    shape="round"
+                    className="shadow-none mb-3"
+                  >
+                    PRUSolusi Sehat
+                  </Button>
+                </a>
+              </Link>
             </Col>
             <Col lg={6} md={12} sm={12}>
               <div className="embed-responsive embed-responsive-16by9">

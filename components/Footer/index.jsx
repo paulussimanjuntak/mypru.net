@@ -1,4 +1,5 @@
 import { Space } from "antd";
+import Link from 'next/link';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -7,6 +8,17 @@ import Button from "antd-button-color";
 import { nasabahMenuData } from "data/navbar";
 
 const year = new Date();
+
+const footerLinks = [
+  { label: "Artikel", link: "/articles" },
+  { label: "Produk Kami", link: "/products" },
+]
+
+const socialMedia = [
+  { icon: "fab fa-instagram", link: "https://instagram.com/" },
+  { icon: "fab fa-facebook-f", link: "https://www.facebook.com/" },
+  { icon: "fab fa-youtube", link: "https://www.youtube.com/" },
+]
 
 const Footer = () => {
   return (
@@ -19,24 +31,16 @@ const Footer = () => {
                 <img src="/static/images/logo.png" width="180" />
               </div>
               <Space>
-                <Button
-                  type="lightdark"
-                  className="shadow-none"
-                  style={{ borderRadius: "5px" }}
-                  icon={<i className="fab fa-instagram" />}
-                />
-                <Button
-                  type="lightdark"
-                  className="shadow-none"
-                  style={{ borderRadius: "5px" }}
-                  icon={<i className="fab fa-facebook-f" />}
-                />
-                <Button
-                  type="lightdark"
-                  className="shadow-none"
-                  style={{ borderRadius: "5px" }}
-                  icon={<i className="fab fa-youtube" />}
-                />
+                {socialMedia.map((data, i) => (
+                  <a href={data.link} target="_blank" key={i}>
+                    <Button
+                      type="lightdark"
+                      className="shadow-none"
+                      style={{ borderRadius: "5px" }}
+                      icon={<i className={data.icon} />}
+                    />
+                  </a>
+                ))}
               </Space>
               <p className="text-footer mt-2 mb-0">
                 MyPru adalah salah satu dari sekian banyak agen asuransi Prudential di Indonesia lewat komunitas atau agency MRT Group.
@@ -53,7 +57,7 @@ const Footer = () => {
             <Col lg={3} sm={12}>
               <h5 className="footer-title">Kontak Kami</h5>
               <p className="text-footer">
-                <i className="fal fa-phone mr-2" /> +628113885929
+                <i className="fal fa-phone mr-2" /> +62812345123
               </p>
               <p className="text-footer">
                 <i className="fal fa-envelope mr-2" /> info@mypru.net
@@ -64,10 +68,14 @@ const Footer = () => {
             </Col>
             <Col lg={2} sm={12}>
               <h5 className="footer-title">Links</h5>
-              <a className="link-section">
-                <p>Artikel</p>
-              </a>
-              <a className="link-section">
+              {footerLinks.map((data, i) => (
+                <Link href={data.link} key={i}>
+                  <a className="link-section">
+                    <p>{data.label}</p>
+                  </a>
+                </Link>
+              ))}
+              <a className="link-section" target="_blank" href="https://payment.prudential.co.id/">
                 <p>Payment Link</p>
               </a>
             </Col>
