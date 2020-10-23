@@ -134,17 +134,20 @@ const Header = () => {
       <Drawer
         placement="right"
         zIndex="1030"
-        closable={false}
         onClose={onClose}
         visible={visible}
+        closeIcon={ <i className="fas fa-times" /> }
+        className="d-block d-sm-block d-md-block d-lg-none d-xl-none"
       >
-        {mobileNavigation.map((data, i) => (
-          <Link href={data.link} key={i}>
-            <p>
-              <a className="text-decoration-none text-dark">{data.label}</a>
-            </p>
-          </Link>
-        ))}
+        <Nav className="flex-column mt-3">
+          {mobileNavigation.map((data, i) => (
+            <Link href={data.link} key={i}>
+              <Nav.Link as="a" className="border-bottom nav-mobile text-reset" onClick={onClose}>
+                {data.label}
+              </Nav.Link>
+            </Link>
+          ))}
+        </Nav>
       </Drawer>
 
 
@@ -161,6 +164,10 @@ const Header = () => {
         }
         :global(.navbar-shadow-bottom) {
           box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 15px !important;
+        }
+        :global(.nav-mobile:hover){
+          color: #212529;
+          background-color: rgba(0,0,0,.075);
         }
       `}</style>
     </>
