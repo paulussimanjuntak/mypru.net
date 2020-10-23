@@ -62,6 +62,9 @@ const App = ({ Component, pageProps }) => {
         .fw-500 {
           font-weight: 500 !important;
         }
+        .text-danger-2{
+          color: #cf1322;
+        }
         blockquote {
           border-left: 5px solid #ebebeb;
           margin: 1.5em 0px;
@@ -80,6 +83,9 @@ const App = ({ Component, pageProps }) => {
         }
         .border-type-1 {
           border: 1px solid rgb(0 0 0 / 4%);
+        }
+        .bor-rad-10px{
+          border-radius: 10px;
         }
         .truncate-3 {
           -webkit-line-clamp: 3;

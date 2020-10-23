@@ -31,7 +31,7 @@ export const productMenuData = [
     label: "Persiapan Dana Waris",
     children: [
       { label: "PRUCinta", link: "prucinta" },
-      { label: "PRULink Term", link: "prulinkterm" },
+      { label: "Paper Assets", link: "prulinkterm" },
     ]
   },
   {
@@ -45,7 +45,7 @@ export const productMenuData = [
 
 export const mobileNavigation = [
   { label: "Home", link: "/" },
-  { label: "Produk Kami", link: "/products" },
+  { label: "Produk", link: "/products" },
   { label: "Peluang Karir", link: "/career" },
   { label: "Layanan Nasabah", link: "/customer" },
   { label: "Artikel", link: "/articles" },

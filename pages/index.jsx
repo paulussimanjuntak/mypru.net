@@ -22,13 +22,7 @@ import { testimoniData } from "data/testimoni";
 import { articleData } from "data/article";
 import { agentData } from "data/agent";
 
-const banners = [
-  "/static/images/banner/11.png",
-  "/static/images/banner/22.png",
-  "/static/images/banner/11.png",
-  "/static/images/banner/44.png",
-  "/static/images/banner/33.png",
-];
+const banners = [ "/static/images/banner/22.png", "/static/images/banner/11.png", "/static/images/banner/44.png", "/static/images/banner/33.png" ];
 
 const Home = () => {
   return (
@@ -47,18 +41,13 @@ const Home = () => {
         <section className="p-t-0-s p-t-60-m p-t-60-t">
           <Row className="align-items-center">
             <Col lg={6} md={12} sm={12}>
-              <h4 className="fs-20-s">
-                Asuransi Kesehatan Prudential Paling Murah!
+              <h4 className="fs-20-s text-capitalize">
+                Asuransi kesehatan yang memberikan perlindungan komplit dan fleksibel
               </h4>
               <p className="fs-16 fs-14-s text-dark">
-                Prudential pada tahun 2020 baru saja meluncurkan PRUSolusi
-                Sehat, yang merupakan produk asuransi kesehatan tradisional
-                dengan premi yang sangat murah dan terjangkau. <br /> <br />
-                Apa itu asuransi kesehatan tradisional? Anda bisa bayangkan
-                seperti BPJS Kesehatan dari pemerintah, namun dengan pelayanan
-                yang premium, terbaik, dan nyaman.
+                PRUPrime Healthcare Plus adalah produk Asuransi Tambahan (Riders) yang memberikan solusi lengkap untuk perlindungan kesehatan dengan pembayaran manfaat sesuai tagihan rumah sakit. Produk ini dirancang khusus untuk memberikan jangkauan perlindungan hingga ke seluruh dunia serta menawarkan fleksibilitas pada pilihan perlindungan kesehatan Anda*.
               </p>
-              <Link href="/products/prusolusi-sehat">
+              <Link href="/products/pruprime-healthcare-plus">
                 <a>
                   <Button
                     type="success"
@@ -66,7 +55,7 @@ const Home = () => {
                     shape="round"
                     className="shadow-none mb-3"
                   >
-                    PRUSolusi Sehat
+                    PRUPrime Healthcare Plus
                   </Button>
                 </a>
               </Link>
@@ -75,7 +64,7 @@ const Home = () => {
               <div className="embed-responsive embed-responsive-16by9">
                 <iframe
                   className="embed-responsive-item"
-                  src="https://www.youtube.com/embed/KRaWnd3LJfs"
+                  src="https://www.youtube.com/embed/zhq4Q53n7PQ"
                   allowFullScreen
                 />
               </div>
@@ -138,15 +127,6 @@ const Home = () => {
               </Col>
             ))}
           </Row>
-          {/* <div className="text-center"> */}
-          {/*   <Link href="/articles"> */}
-          {/*     <a> */}
-          {/*       <Button type="lightdark" size="large" shape="round"> */}
-          {/*         Lihat Semua */}
-          {/*       </Button> */}
-          {/*     </a> */}
-          {/*   </Link> */}
-          {/* </div> */}
         </section>
       </Container>
 
@@ -155,7 +135,7 @@ const Home = () => {
           <Card.Body className="p-5">
             <Row className="align-items-center">
               <Col sm={12} md={6}>
-                <img src="/static/images/about-item.png" className="w-100" />
+                <img src="/static/images/about.jpg" className="w-100 bor-rad-10px" />
               </Col>
               <Col sm={12} md={6}>
                 <h3 className="fs-20-s mb-4">Tentang Kami</h3>
@@ -168,24 +148,16 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* <section className="aboutus-section"> */}
-      {/*   <Container className="bg-danger"> */}
-      {/*     <h3 className="fs-20-s text-center mb-4">Tentang Kami</h3> */}
-      {/*     <p className="text-center fs-16"> */}
-      {/*       Kami merupakan Partner bisnis dari PT. Prudential Life Assurance sejak 2012 dan bernaung dibawah Sahadewa Agency yang Berkantor di Jl. Hangtuah No 1 Sanur - Bali. Tugas kami adalah memberikan solusi terbaik untuk perencanaan asuransi sesuai dengan kebutuhan dan kemampuan anda. serta Memberikan pelayanan yang profesional dan berintegritas untuk melayani masyarakat secara luas di seluruh Indonesia. */}
-      {/*     </p> */}
-      {/*   </Container> */}
-      {/* </section> */}
-
       <section className="pb-2 pt-0">
         <Container>
-          <h3 className="fs-20-s text-center mb-4">Tim Kami</h3>
           <Row className="mb-4">
             {agentData.map((data, i) => (
               <Col className="text-center mb-3" key={i}>
                 <Image 
                   roundedCircle
-                  src="/static/images/profile.png" 
+                  width="267"
+                  height="267"
+                  src={data.image} 
                   className="img-fit mb-2 mb-md-0 mb-lg-0" 
                 />
                 <h5 className="fs-16-s mt-3">{data.name}</h5>

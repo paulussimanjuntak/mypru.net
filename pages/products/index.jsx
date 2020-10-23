@@ -15,9 +15,11 @@ const Product = () => {
     <>
       <Jumbotron className="img-banner-article mb-0">
         <Container>
-          <h1 className="title-banner fs-24-s">Produk Kami</h1>
-          <p className="sub-banner fs-14-s text-wrap">
-            Kami peduli dengan kesahatan dan masa depan Anda
+          <h1 className="title-banner fs-30-s">Taukah Anda?</h1>
+          <p className="sub-banner fs-18-s text-wrap">
+            Rata-rata kenaikan
+            <span className="text-danger-2 fw-500"> biaya kesehatan </span>
+            tahun 2019 sebesar ±<span className="text-danger-2 font-weight-bold fs-20"> 11%</span>.
           </p>
         </Container>
       </Jumbotron>
@@ -60,7 +62,7 @@ const Product = () => {
       ))}
       <style jsx>{`
         :global(.img-banner-article){
-          background: url("/static/images/products-banner.jpg") no-repeat center center;
+          background: url("/static/images/banner/Banner-Doctors.png") no-repeat center center;
           background-size: cover;
           border-radius: 0;
           padding: 8rem 2rem;
@@ -71,15 +73,13 @@ const Product = () => {
           border-bottom: 1px solid #efefef;
         }
         .title-banner{
-          color: #111;
-        }
-        .title-banner{
+          color: #cf1322;
           font-weight: 700;
           letter-spacing: 2px;
         }
         .sub-banner{
           color: #222;
-          font-size: 16px;
+          font-size: 20px;
           font-weight: 500; 
           text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
         }
@@ -125,7 +125,13 @@ const Product = () => {
           margin-top: 1rem;
         }
 
+        @media only screen and (max-width: 425px) {
+        }
+
         @media only screen and (max-width: 767px) {
+          :global(.img-banner-article){
+            padding: 4rem 2rem;
+          }
           .title-group-product-sticky{
             top: 0;
           }

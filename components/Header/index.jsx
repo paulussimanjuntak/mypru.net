@@ -98,19 +98,12 @@ const Header = () => {
                 overlayClassName="position-fixed"
                 onClick={() => router.push("/products")}
               >
-                <Nav.Link className="mx-2">Produk Kami</Nav.Link>
+                <Nav.Link className="mx-2">Produk</Nav.Link>
               </Dropdown>
 
-              <Dropdown
-                arrow
-                overlay={careerMenu}
-                trigger={["hover"]}
-                placement="bottomCenter"
-                overlayClassName="position-fixed"
-                onClick={() => router.push("/career")}
-              >
-                <Nav.Link>Peluang Karir</Nav.Link>
-              </Dropdown>
+              <Link href="/career">
+                <Nav.Link as="a">Peluang Karir</Nav.Link>
+              </Link>
 
               <Dropdown
                 arrow
