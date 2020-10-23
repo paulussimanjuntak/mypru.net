@@ -53,7 +53,7 @@ const Article = () => {
         <Row>
           <Col xl={8} className="order-12 order-md-12 order-lg-12 order-xl-1">
             <Row className="mt-2">
-              {articleData.reverse().slice(0, 3).map((data, i) => (
+              {articleData.reverse().map((data, i) => (
                 <Col md={6} lg={12} xl={12} key={i}>
                   <CardArticleHorizontalMemo
                     article={data}

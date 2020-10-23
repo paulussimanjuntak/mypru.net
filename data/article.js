@@ -8,7 +8,7 @@ export const articleData = [
   {
     image: "https://www.uangbijak.id/wp-content/uploads/2020/04/ulises-baga-oRYOOjvPq8E-unsplash-800x400.jpg",
     title: "Apakah Asuransi dibutuhkan di Masa Krisis?",
-    link: "apakah-asuransi-dibutuhkan-di-masa-krisis?",
+    link: "apakah-asuransi-dibutuhkan-di-masa-krisis",
     description: "Penetrasi asuransi di Indonesia saat ini masih terhitung kecil, yaitu 6-7% dari total populasi. Berarti dari 265 juta penduduk Indonesia, yang memiliki polis asuransi baru sekitar 16-20 juta jiwa.  Banyak pertanyaan yang ditujukan ke kami: di masa pandemi ini, di mana kita juga harus melakukan budgeting ulang, perlukah asuransi dipertahankan?"
   },
   {
@@ -20,7 +20,7 @@ export const articleData = [
   {
     image: "https://www.uangbijak.id/wp-content/uploads/2020/04/sharon-mccutcheon-ZihPQeQR2wM-unsplash-800x400.jpg",
     title: "Bagaimana menyiapkan Dana Darurat?",
-    link: "bagaimana-menyiapkan-dana-darurat?",
+    link: "bagaimana-menyiapkan-dana-darurat",
     description: "Banyak di antara kita yang belum menyiapkan dan memiliki Dana Darurat dalam jumlah yang sesuai keuangan kita. Dana Darurat disebut juga sebagai Emergency Cash Fund, adalah komponen pembangun “keamanan keuangan”. Seringkali kita bernafsu untuk mengejar kenyamanan keuangan atau yang disebut investasi (bagian paling menarik dalam perencanaan keuangan),padahal belum menyiapkan pondasi yang kuat."
   },
   {
@@ -33,8 +33,8 @@ export const articleData = [
 
 export const autoCompleteArticle = [
   { value: "5 Langkah Menata Keuangan saat New Normal", },
-  { value: "Apakah Asuransi dibutuhkan di Masa Krisis?", },
+  { value: "Apakah Asuransi dibutuhkan di Masa Krisis", },
   { value: "5 Tips Menyiapkan Dana Pendidikan Anak", },
-  { value: "Bagaimana menyiapkan Dana Darurat?", },
+  { value: "Bagaimana menyiapkan Dana Darurat", },
   { value: "10 Asuransi Jiwa & Umum dengan Premi Neto Terbesar", },
 ]

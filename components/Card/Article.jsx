@@ -15,7 +15,7 @@ const Article = ({ article }) => {
           />
         </div>
         <Card.Body className="py-3 px-0">
-          <Link href={`articles/${article.link}`} as={`articles/${article.link}`}>
+          <Link href={`/articles/${article.link}`} as={`/articles/${article.link}`}>
             <a className="text-decoration-none">
               <Card.Text className="truncate-3 text-dark fs-14-s">
                 <strong className="fs-18 fs-16-s d-block">{article.title}</strong>

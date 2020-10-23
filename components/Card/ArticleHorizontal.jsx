@@ -10,7 +10,7 @@ const ArticleHorizontal = ({ article }) => {
         <Row>
           <Col lg={6} xl={8} className="order-12 order-md-12 order-lg-1 order-xl-1">
             <Card.Body className="mt-2-s pl-0-s px-0">
-              <Link href={article.link}>
+              <Link href={`/articles/${article.link}`}>
                 <a className="text-reset">
                   <h5 className="card-title mb-2 truncate-2">{article.title}</h5>
                 </a>

@@ -62,6 +62,22 @@ const App = ({ Component, pageProps }) => {
         .fw-500 {
           font-weight: 500 !important;
         }
+        blockquote {
+          border-left: 5px solid #ebebeb;
+          margin: 1.5em 0px;
+          padding: 0.5em 20px;
+        }
+        blockquote p::before {
+          content: open-quote;
+        }
+
+        blockquote p::after {
+          content: close-quote;
+        }
+        blockquote p {
+          display: inline;
+          font-size: 100%;
+        }
         .border-type-1 {
           border: 1px solid rgb(0 0 0 / 4%);
         }
