@@ -41,13 +41,24 @@ const nasabahMenu = (
   <Menu className="d-none d-lg-block user-select-none">
     {nasabahMenuData.map((data, i) => (
       <Menu.Item key={i} className="text-capitalize">
-        <Link href={`/customer/${data.link}`}>
-          <a className="text-decoration-none">{data.label}</a>
-        </Link>
+        {data.link ? (
+          <Link href={`/customer/${data.link}`}>
+            <a className="text-decoration-none">{data.label}</a>
+          </Link>
+        ) : (
+          <a
+            href="https://payment.prudential.co.id/"
+            target="_blank"
+            className="text-decoration-none"
+          >
+            {data.label}
+          </a>
+        )}
       </Menu.Item>
     ))}
   </Menu>
 );
+
 
 const Header = () => {
   const router = useRouter();
