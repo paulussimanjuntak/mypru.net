@@ -1,9 +1,9 @@
 export const nasabahMenuData = [
-  { label: "Cara Klaim", link: "claim" },
-  { label: "Testimoni Klaim", link: "testimoni" },
-  { label: "Cara Pembayaran", link: false },
-  { label: "Informasi Perusahaan", link: "our-company" },
-  { label: "Konsultasi", link: "contact-us" },
+  { label: "Cara Klaim", link: "claim", icon: "fal fa-book" },
+  { label: "Testimoni Klaim", link: "testimoni", icon: "fal fa-hands-heart" },
+  { label: "Cara Pembayaran", link: false, icon: "fal fa-file-invoice-dollar" },
+  { label: "Informasi Perusahaan", link: "our-company", icon: "fal fa-building" },
+  { label: "Konsultasi", link: "contact-us", icon: "fal fa-user-md-chat" },
 ]
 
 export const careerMenuData = [
@@ -31,7 +31,7 @@ export const productMenuData = [
     label: "Persiapan Dana Waris",
     children: [
       { label: "PRUCinta", link: "prucinta" },
-      { label: "Paper Assets", link: "prulinkterm" },
+      { label: "Paper Assets", link: "paperassets" },
     ]
   },
   {

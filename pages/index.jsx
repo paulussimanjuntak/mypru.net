@@ -22,7 +22,7 @@ import { testimoniData } from "data/testimoni";
 import { articleData } from "data/article";
 import { agentData } from "data/agent";
 
-const banners = [ "/static/images/banner/pph-banner.png", "/static/images/banner/pss-banner.png", "/static/images/banner/prutop-banner.png", "/static/images/banner/pcb88-banner.png", "/static/images/banner/prucinta-banner.png" ];
+const banners = [ "/static/images/banner/pph-banner.png", "/static/images/banner/pss-banner.png", "/static/images/banner/prutop-banner.png", "/static/images/banner/pcb88-banner.png", "/static/images/banner/prucinta-banner.png", "/static/images/banner/pruworks-banner.png" ];
 
 const Home = () => {
   return (

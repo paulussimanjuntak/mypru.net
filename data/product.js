@@ -41,7 +41,7 @@ export const productsData = [
     `,
     products: [
       { label: "Asuransi Jiwa Syariah PRUCinta", icon: "fal fa-gift", link: "prucinta" },
-      { label: "Linkterm", icon: "fal fa-gift", link: "prulinkterm" },
+      { label: "Paper Assets", icon: "fal fa-file-alt", link: "paperassets" },
     ]
   },
   {

@@ -49,9 +49,23 @@ const Footer = () => {
             <Col lg={3} sm={12} className="pl-lg-5">
               <h5 className="footer-title">Layanan Nasabah</h5>
               {nasabahMenuData.map((data, i) => (
-                <a className="link-section" key={i}>
-                  <p>{data.label}</p>
-                </a>
+                <div key={i}>
+                  {data.link ? (
+                    <Link href={`/customer/${data.link}`}>
+                      <a className="link-section">
+                        <p>{data.label}</p>
+                      </a>
+                    </Link>
+                  ) : (
+                    <a
+                      href="https://payment.prudential.co.id/"
+                      target="_blank"
+                      className="link-section"
+                    >
+                      <p>{data.label}</p>
+                    </a>
+                  )}
+                </div>
               ))}
             </Col>
             <Col lg={3} sm={12}>

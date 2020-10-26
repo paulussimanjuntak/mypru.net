@@ -12,6 +12,18 @@ import "react-tiny-fab/dist/styles.css";
 
 import Layout from "components/Layout";
 
+const emailStyle = {
+  backgroundColor: "#1890ff"
+}
+
+const waStyle = {
+  backgroundColor: "#25D366"
+}
+
+const phoneStyle = {
+  backgroundColor: "#f39c12"
+}
+
 const App = ({ Component, pageProps }) => {
   return (
     <>
@@ -31,16 +43,21 @@ const App = ({ Component, pageProps }) => {
         <Component {...pageProps} />
         <Fab 
           alwaysShowTitle={false}
-          icon={<i className="far fa-plus" />}
+          icon={<i className="far fa-comments fa-lg" />}
           style={{ bottom: 0, right: 0 }}
           event="hover"
         >
-          <Action text="WhatsApp">
+          <Action text="Email" style={emailStyle}>
+            <a href="mailto:mypru@gmail.com" target="_blank" className="text-decoration-none text-reset">
+              <i className="far fa-envelope" />
+            </a>
+          </Action>
+          <Action text="WhatsApp" style={waStyle}>
             <a href="https://wa.me/6281234567890" target="_blank" className="text-decoration-none text-reset">
               <i className="fab fa-lg fa-whatsapp" />
             </a>
           </Action>
-          <Action text="Telepon">
+          <Action text="Telepon" style={phoneStyle}>
             <a href="tel:6281234567890" target="_blank" className="text-decoration-none text-reset">
               <i className="far fa-phone-alt" />
             </a>
@@ -100,6 +117,10 @@ const App = ({ Component, pageProps }) => {
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-box-orient: vertical;
+        }
+
+        .rtf.open .rtf--mb>*{
+          transform: rotate(0deg) !important;
         }
 
 

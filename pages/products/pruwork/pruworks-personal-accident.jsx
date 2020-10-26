@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import style from 'components/Products/detailStyle'
 
 const title = "PRUWorks Personal Accident"
+const linkWA = "https://api.whatsapp.com/send?phone=6281234567890&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A."
 
 const ProductItem = () => {
   return(
@@ -17,6 +18,9 @@ const ProductItem = () => {
             <p>
               PRUWorks Personal Accident merupakan produk asuransi kecelakaan diri kumpulan dari PT Prudential Life Assurance (Prudential Indonesia) bagi nasabah korporasi. Premi yang dibayarkan memberikan manfaat perlindungan (proteksi) manfaat meninggal akibat kecelakaan. Produk ini tersedia dalam mata uang Rupiah dan memberikan Manfaat Asuransi selama Polis masih aktif.
             </p>
+            <a href={linkWA} target="_blank">
+              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+            </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/2020/PDF/Products/Product-Summary-PRUWorks-Personal-Accident_200128_FA.pdf" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>
             </a>

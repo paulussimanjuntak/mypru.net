@@ -10,7 +10,7 @@ const CardBanner = ({ image }) => {
             <img
               className="mx-auto d-block img-fit w-100 rounded-0"
               src={image}
-              alt="Tridatu Bali ID"
+              alt="MyPru"
             />
           </a>
         {/* </Link> */}

@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import style from 'components/Products/detailStyle'
 
 const title = "PRUCorporate Personal Accident"
+const linkWA = "https://api.whatsapp.com/send?phone=6281234567890&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A."
 
 const ProductItem = () => {
   return(
@@ -18,6 +19,9 @@ const ProductItem = () => {
               Wujudkan kemudahan dalam memberikan ketenangan dalam bekerja bagi karyawan Anda dengan perlindungan kecelakaan diri<br />
               PRUCorporate Personal Accident adalah Asuransi Kecelakaan Diri  Kumpulan yang memberikan perlindungan atas risiko Meninggal Dunia akibat Kecelakaan dengan pilihan manfaat tambahan berupa Cacat Tetap Akibat Kecelakaan Akselerasi dan Penggantian Biaya Medis Akibat Kecelakaan.
             </p>
+            <a href={linkWA} target="_blank">
+              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+            </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-personal-accident-agency_190913_FA.PDF" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>
             </a>

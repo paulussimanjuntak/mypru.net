@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import style from 'components/Products/detailStyle'
 
 const title = "PRUCorporate Medical"
+const linkWA = "https://api.whatsapp.com/send?phone=6281234567890&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A."
 
 const ProductItem = () => {
   return(
@@ -18,6 +19,9 @@ const ProductItem = () => {
               Wujudkan kemudahan mendapatkan pelayanan kesehatan untuk karyawan dan keluarganya<br />
               PRUCorporate Medical adalah Perlindungan Asuransi Kesehatan Kumpulan yang memberikan penggantian biaya medis untuk Rawat Inap dengan pilihan manfaat tambahan berupa Persalinan, Rawat Jalan, Perawatan Gigi dan Kacamata*.
             </p>
+            <a href={linkWA} target="_blank">
+              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+            </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-medical-agency_190913_FA.PDF" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>
             </a>

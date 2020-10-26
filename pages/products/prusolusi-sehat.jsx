@@ -1,7 +1,10 @@
+import Link from 'next/link'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
+import Button from 'antd-button-color'
+import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container'
 
 import style from 'components/Products/detailStyle'
@@ -26,15 +29,41 @@ const benefitsData = [
 ]
 
 const title = "PRUSolusi Sehat"
+const linkWA = "https://api.whatsapp.com/send?phone=6281234567890&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A."
 
 const ProductItem = () => {
   return(
     <>
+      <Carousel
+        controls={false}
+        indicators={false}
+      >
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="/static/images/banner/pss-banner.png"
+          />
+        </Carousel.Item>
+      </Carousel>
+
       <section className="pb-0">
         <Container>
           <h2 className="font-weight-normal fs-24-s mb-3">{title}</h2>
           <div className="box-description">
-            PRUSolusi Sehat  adalah Produk Asuransi Kesehatan Tradisional yang memberikan solusi lengkap dan fleksibel untuk perlindungan kesehatan dengan pembayaran manfaat sesuai tagihan rumah sakit untuk beberapa manfaat berdasarkan plan yang dipilih pada Tabel Manfaat PRUSolusi Sehat serta jangkauan perlindungan hingga seluruh dunia yang memberikan fleksibilitas atas pilihan Perlindungan kesehatan Anda*.
+            <p>
+              PRUSolusi Sehat  adalah Produk Asuransi Kesehatan Tradisional yang memberikan solusi lengkap dan fleksibel untuk perlindungan kesehatan dengan pembayaran manfaat sesuai tagihan rumah sakit untuk beberapa manfaat berdasarkan plan yang dipilih pada Tabel Manfaat PRUSolusi Sehat serta jangkauan perlindungan hingga seluruh dunia yang memberikan fleksibilitas atas pilihan Perlindungan kesehatan Anda*.
+            </p>
+            <Link href={linkWA}>
+              <a target="_blank">
+                <Button
+                  type="success"
+                  size="large"
+                  className="shadow-none"
+                >
+                  Info Lebih Lanjut
+                </Button>
+              </a>
+            </Link>
           </div>
         </Container>
       </section>
