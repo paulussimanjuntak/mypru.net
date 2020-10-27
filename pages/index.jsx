@@ -22,7 +22,17 @@ import { testimoniData } from "data/testimoni";
 import { articleData } from "data/article";
 import { agentData } from "data/agent";
 
-const banners = [ "/static/images/banner/pph-banner.png", "/static/images/banner/pss-banner.png", "/static/images/banner/prutop-banner.png", "/static/images/banner/pcb88-banner.png", "/static/images/banner/prucinta-banner.png", "/static/images/banner/pruworks-banner.png" ];
+const bannerss = [ "/static/images/banner/pph-banner.png", "/static/images/banner/pss-banner.png", "/static/images/banner/prutop-banner.png", 
+"/static/images/banner/pcb88-banner.png", "/static/images/banner/prucinta-banner.png", "/static/images/banner/pruworks-banner.png" ];
+
+const banners = [
+  { image: "/static/images/banner/pph-banner.png", link: "/products/pruprime-healthcare-plus" },
+  { image: "/static/images/banner/pss-banner.png", link: "/products/prusolusi-sehat" },
+  { image: "/static/images/banner/prutop-banner.png", link: "/products/prutotal-critical-protection" },
+  { image: "/static/images/banner/pcb88-banner.png", link: "/products/prucritical-benefit-88" },
+  { image: "/static/images/banner/prucinta-banner.png", link: "/products/prucinta" },
+  { image: "/static/images/banner/pruworks-banner.png", link: "/products/pruwork" },
+]
 
 const Home = () => {
   return (
@@ -31,7 +41,7 @@ const Home = () => {
         <Slider {...bannerSettings}>
           {banners.map((data, i) => (
             <Col key={i} className="px-0">
-              <CardBannerMemo image={data} />
+              <CardBannerMemo image={data.image} link={data.link} />
             </Col>
           ))}
         </Slider>

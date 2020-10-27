@@ -40,17 +40,17 @@ const App = ({ Component, pageProps }) => {
           event="hover"
         >
           <Action text="Email" style={emailStyle}>
-            <a href="mailto:mypru@gmail.com" target="_blank" className="text-decoration-none text-reset">
+            <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} target="_blank" className="text-decoration-none text-reset">
               <i className="far fa-envelope" />
             </a>
           </Action>
           <Action text="WhatsApp" style={waStyle}>
-            <a href="https://wa.me/6281234567890" target="_blank" className="text-decoration-none text-reset">
+            <a href={`https://wa.me/${process.env.NEXT_PUBLIC_TELEPON}`} target="_blank" className="text-decoration-none text-reset">
               <i className="fab fa-lg fa-whatsapp" />
             </a>
           </Action>
           <Action text="Telepon" style={phoneStyle}>
-            <a href="tel:6281234567890" target="_blank" className="text-decoration-none text-reset">
+            <a href={`tel:${process.env.NEXT_PUBLIC_TELEPON}`} target="_blank" className="text-decoration-none text-reset">
               <i className="far fa-phone-alt" />
             </a>
           </Action>

@@ -15,9 +15,9 @@ const footerLinks = [
 ]
 
 const socialMedia = [
-  { icon: "fab fa-instagram", link: "https://instagram.com/" },
-  { icon: "fab fa-facebook-f", link: "https://www.facebook.com/" },
-  { icon: "fab fa-youtube", link: "https://www.youtube.com/" },
+  { icon: "fab fa-instagram", link: process.env.NEXT_PUBLIC_INSTAGRAM },
+  { icon: "fab fa-facebook-f", link: process.env.NEXT_PUBLIC_FACEBOOK },
+  { icon: "fab fa-youtube", link: process.env.NEXT_PUBLIC_YOUTUBE },
 ]
 
 const Footer = () => {
@@ -71,13 +71,13 @@ const Footer = () => {
             <Col lg={3} sm={12}>
               <h5 className="footer-title">Kontak Kami</h5>
               <p className="text-footer">
-                <i className="fal fa-phone mr-2" /> +62812345123
+                <i className="fal fa-phone mr-2" /> {process.env.NEXT_PUBLIC_TELEPON}
               </p>
               <p className="text-footer">
-                <i className="fal fa-envelope mr-2" /> info@mypru.net
+                <i className="fal fa-envelope mr-2" /> {process.env.NEXT_PUBLIC_EMAIL}
               </p>
               <p className="text-footer">
-                <i className="fal fa-map-marker-alt mr-2" /> Jalan Raya Kerobokan 70 Kuta Utara, Kabupaten Badung, Bali, Indonesia
+                <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1 Denpasar, Bali, Indonesia 80228
               </p>
             </Col>
             <Col lg={2} sm={12}>

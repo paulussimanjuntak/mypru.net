@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Card from "react-bootstrap/Card";
 
-const CardBanner = ({ image }) => {
+const CardBanner = ({ image, link }) => {
   return (
     <>
       <Card className="border-0">
-        {/* <Link href="/promo" as="/promo"> */}
+        <Link href={link} as={link}>
           <a className="text-decoration-none text-dark">
             <img
               className="mx-auto d-block img-fit w-100 rounded-0"
@@ -13,7 +13,7 @@ const CardBanner = ({ image }) => {
               alt="MyPru"
             />
           </a>
-        {/* </Link> */}
+        </Link>
       </Card>
     </>
   );
