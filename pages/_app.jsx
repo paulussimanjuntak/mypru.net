@@ -12,17 +12,9 @@ import "react-tiny-fab/dist/styles.css";
 
 import Layout from "components/Layout";
 
-const emailStyle = {
-  backgroundColor: "#1890ff"
-}
-
-const waStyle = {
-  backgroundColor: "#25D366"
-}
-
-const phoneStyle = {
-  backgroundColor: "#f39c12"
-}
+const emailStyle = { backgroundColor: "#1890ff" }
+const waStyle = { backgroundColor: "#25D366" }
+const phoneStyle = { backgroundColor: "#f39c12" }
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -152,12 +144,6 @@ const App = ({ Component, pageProps }) => {
         /* ANT ICON */
 
         /*SLICK-SLIDE*/
-        .slick-slide {
-          // padding: 0px 5px;
-        }
-        .slick-list {
-          // margin: 0 -1em;
-        }
         .slick-prev,
         .slick-next {
           font-size: 15px !important;

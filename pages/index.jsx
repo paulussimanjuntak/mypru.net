@@ -171,13 +171,6 @@ const Home = () => {
       </section>
 
       <style jsx>{`
-        // .aboutus-section{
-        //   position: relative;
-        //   background-image: url("/static/images/aboutus-banner.png");
-        //   background-size: cover;
-        // }
-        //
-        
         :global(.about-section){
           border-radius: 10px;
           background-color: #f5f5f5;
