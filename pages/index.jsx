@@ -72,7 +72,7 @@ const Home = () => {
             <Col lg={6} md={12} sm={12}>
               <div className="embed-responsive embed-responsive-16by9 bor-rad-10px shadow">
                 <iframe
-                  className="embed-responsive-item"
+                  className="embed-responsive-item bor-rad-10px"
                   src="https://www.youtube.com/embed/zhq4Q53n7PQ"
                   allowFullScreen
                 />
@@ -142,10 +142,10 @@ const Home = () => {
 
       <section className="pt-0">
         <Container className="about-section">
-          <Card.Body className="p-5">
+          <Card.Body className="p-lg-5 p-md-5">
             <Row className="align-items-center">
               <Col sm={12} md={6}>
-                <img alt="MyPru.net - about" src="/static/images/about.jpg" className="w-100 bor-rad-10px" />
+                <img alt="MyPru.net - about" src="/static/images/about.jpg" className="w-100 bor-rad-10px mb-4 mb-md-0 mb-lg-0" />
               </Col>
               <Col sm={12} md={6}>
                 <h3 className="fs-20-s mb-4">Tentang Kami</h3>
