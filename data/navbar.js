@@ -6,12 +6,6 @@ export const nasabahMenuData = [
   { label: "Konsultasi", link: "contact-us", icon: "fal fa-user-md-chat" },
 ]
 
-export const careerMenuData = [
-  { label: "Benefit jadi agen" },
-  { label: "Sistem Business" },
-  { label: "Jenjang karir" },
-]
-
 export const productMenuData = [
   {
     label: "Proteksi Kesehatan",

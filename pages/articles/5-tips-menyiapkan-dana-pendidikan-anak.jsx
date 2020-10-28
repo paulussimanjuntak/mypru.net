@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -11,7 +12,13 @@ const DetailArticle = () => {
             <Col lg={8}>
               <Row className="mb-2">
                 <Col lg={12} md={12} sm={12}>
-                  <img src="/static/images/articles/3.jpg" className="w-100" />
+                  <Image
+                    unsized
+                    quality={60}
+                    alt="MyPru.net | 5 Tips Menyiapkan Dana Pendidikan Anak"
+                    src="/static/images/articles/3.jpg"
+                    className="w-100"
+                  />
                 </Col>
               </Row>
               <h4 className="fs-20-s mb-1">
@@ -33,9 +40,9 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Pendidikan adalah suatu hal penting yang ingin diberikan orang
-                  tua kepada para anak-anaknya.Bahkan ada yang berpendapat, tidak
-                  penting meninggalkan harta, yang penting memberikan sekolah
-                  yang terbaik, itu sudah cukup.
+                  tua kepada para anak-anaknya.Bahkan ada yang berpendapat,
+                  tidak penting meninggalkan harta, yang penting memberikan
+                  sekolah yang terbaik, itu sudah cukup.
                 </p>
                 <p>
                   Masalahnya adalah: sekolah terbaik jaman now itu tidak murah
@@ -51,17 +58,17 @@ const DetailArticle = () => {
                 </p>
                 <h5>1. Tentukan Goal: Apa Cita-Cita si anak?</h5>
                 <p>
-                  Pertama, kita menentukan Goal atau tujuan kita.Cara paling baik
-                  adalah mengetahui minat atau bakat sang anak, dan kemudian
-                  didiskusikan bersama.Ini berlaku bila anak sudah cukup besar
-                  untuk diajak berdiskusi.
+                  Pertama, kita menentukan Goal atau tujuan kita.Cara paling
+                  baik adalah mengetahui minat atau bakat sang anak, dan
+                  kemudian didiskusikan bersama.Ini berlaku bila anak sudah
+                  cukup besar untuk diajak berdiskusi.
                 </p>
                 <p>
                   Bila anak masih di bawah umur belum, belum bisa memilih
                   cita-cita, bakat atau minat, asumsikan dengan rata-rata
-                  pendidikan kuliah yang standar, misalnya mau masuk
-                  kedokteran, atau non-kedokteran?Nanti bila anak sudah lebib
-                  dewasa bisa disesuaikan kembali.
+                  pendidikan kuliah yang standar, misalnya mau masuk kedokteran,
+                  atau non-kedokteran?Nanti bila anak sudah lebib dewasa bisa
+                  disesuaikan kembali.
                 </p>
                 <p>
                   Tanyakan juga apakah ingin bersekolah di dalam negeri atau di
@@ -90,8 +97,8 @@ const DetailArticle = () => {
                   kenaikan biaya pendidikan anak setiap tahunnya.
                 </p>
                 <p>
-                  Jika biaya masuk kuliah dokter di tahun 2020 adalah 200
-                  juta, sementara anak &nbsp;masih usia 5 tahun, anda perlu
+                  Jika biaya masuk kuliah dokter di tahun 2020 adalah 200 juta,
+                  sementara anak &nbsp;masih usia 5 tahun, anda perlu
                   memperkirakan berapa kenaikan biayanya dalam 13 tahun ke
                   depan? Misalnya dengan mengambil rata-rata kenaikan biaya
                   kuliah per tahun sebesar 7%, maka nilainya saat anak masuk
@@ -111,9 +118,9 @@ const DetailArticle = () => {
                 <p>
                   Setelah menemukan angka perkiraan dana saat anak masuk kuliah,
                   sekarang kita menentukan jumlah pokok investasi yang akan kita
-                  tabungkan. Penasehat keuangan akan membantu anda
-                  menghitung, dengan menggunakan kalkulator finansial atau
-                  aplikasi keuangan.
+                  tabungkan. Penasehat keuangan akan membantu anda menghitung,
+                  dengan menggunakan kalkulator finansial atau aplikasi
+                  keuangan.
                 </p>
                 <p>Ada 2 pilihan cara pembayaran:</p>
                 <ul>
@@ -131,9 +138,9 @@ const DetailArticle = () => {
                   <li>
                     Pertama: dengan cara mencicil bulanan dengan menampatkan
                     dana ke instrumen investasi dengan keuntungan rata-rata 10%
-                    per tahun, anda berinvestasi sebesar 1,5 juta setiap bulannya
-                    hingga 13 tahun ke depan (total pokok modal adalah 234 juta
-                    selama 13 tahun)
+                    per tahun, anda berinvestasi sebesar 1,5 juta setiap
+                    bulannya hingga 13 tahun ke depan (total pokok modal adalah
+                    234 juta selama 13 tahun)
                   </li>
                   <li>
                     Atau yang kedua: dengan menempatkan dana 132 juta dengan
@@ -148,7 +155,9 @@ const DetailArticle = () => {
                     sizes="(max-width: 300px) 100vw, 300px"
                   />
                 </div>
-                <h5 className="mt-3">4. Susun portofolio investasi pendidikan</h5>
+                <h5 className="mt-3">
+                  4. Susun portofolio investasi pendidikan
+                </h5>
                 <p>
                   <img
                     src="/static/images/articles/3333.jpg"
@@ -162,8 +171,8 @@ const DetailArticle = () => {
                   adalah menentukan portofolio atau pilihan produk investasinya.
                 </p>
                 <p>
-                  Mengapa kami sarankan anda menyiapkan dalam bentuk
-                  investasi, bukan produk tabungan?
+                  Mengapa kami sarankan anda menyiapkan dalam bentuk investasi,
+                  bukan produk tabungan?
                 </p>
                 <p>
                   Karena tabungan hanya memberikan kita hasil keuntungan kecil
@@ -189,8 +198,8 @@ const DetailArticle = () => {
                   <li>atau kombinasi</li>
                 </ul>
                 <p>
-                  Kombinasi misalnya 50% saham 50% emas, atau 50% reksadana saham
-                  50% reksadana obligasi dll.
+                  Kombinasi misalnya 50% saham 50% emas, atau 50% reksadana
+                  saham 50% reksadana obligasi dll.
                 </p>
                 <p>
                   Kemudian anda dapat memilih beragam program Dana Pendidikan
@@ -202,10 +211,9 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Saya pribadi merekomendasikan untuk tidak menaruh Dana
-                  Pendidikan anda di satu keranjang, misalnya semuanya di
-                  saham, atau semuanya di emas.Dengan melakukan strategi
-                  diversifikasi maka anda sudah meminimalisasi resiko kerugian
-                  investasi anda.
+                  Pendidikan anda di satu keranjang, misalnya semuanya di saham,
+                  atau semuanya di emas.Dengan melakukan strategi diversifikasi
+                  maka anda sudah meminimalisasi resiko kerugian investasi anda.
                 </p>
                 <h5>5. Asuransikan Rencana pendidikan Anak anda</h5>
                 <p>
@@ -236,9 +244,9 @@ const DetailArticle = () => {
                   Siapa yang bisa menjamin usia seseorang?Siapa yang bisa
                   menjamin bahwa pemberi nafkah masih tetap akan ada terus
                   menabungkan kebutuhan pendidikan anak sampai anak kuliah.Siapa
-                  yang bisa menjamin bahwa pemberi nafkah selalu bisa
-                  produktif, bagaimana bila pemberi nafkah “berhalangan tetap
-                  atau total” dalam melaksanankan tugasnya?
+                  yang bisa menjamin bahwa pemberi nafkah selalu bisa produktif,
+                  bagaimana bila pemberi nafkah “berhalangan tetap atau total”
+                  dalam melaksanankan tugasnya?
                 </p>
                 <blockquote>
                   <p>
@@ -260,7 +268,8 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Biaya premi asuransi jiwa bisa dihemat dengan mengambil produk
-                  asuransi jiwa berjangka (term life), bukan <em>whole life</em>.
+                  asuransi jiwa berjangka (term life), bukan <em>whole life</em>
+                  .
                 </p>
                 <p>
                   Anda bisa membeli asuransi ini terpisah dari program investasi
@@ -281,7 +290,8 @@ const DetailArticle = () => {
                   cicilan tabungan anda semakin mahal setiap tahunnya karena
                   waktu yang semakin memendek. Lakukan autodebet rekening
                   investasi dan polis asuransi supaya program pendidikan anak
-                  anda dapat berjalan konsisten, disiplin dan mencapai tujuannya.
+                  anda dapat berjalan konsisten, disiplin dan mencapai
+                  tujuannya.
                 </p>
                 <p>
                   Konsultasikan juga dengan penasehat keuangan yang

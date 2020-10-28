@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -11,7 +12,13 @@ const DetailArticle = () => {
             <Col lg={8}>
               <Row className="mb-2">
                 <Col lg={12} md={12} sm={12}>
-                  <img src="/static/images/articles/4.jpg" className="w-100" />
+                  <Image
+                    unsized
+                    quality={60}
+                    alt="MyPru.net | Apakah Asuransi dibutuhkan di Masa Krisis?"
+                    src="/static/images/articles/4.jpg"
+                    className="w-100"
+                  />
                 </Col>
               </Row>
               <h4 className="fs-20-s mb-1">
@@ -83,10 +90,9 @@ const DetailArticle = () => {
                     melebihi kenaikan penghasilan kita)
                   </li>
                   <li>
-                    sumber nafkah mengalami sakit kritis, misalnya
-                    jantung, stroke, kanker, cacat tetap yang menyebabkan tidak
-                    bisa lagi berpenghasilan selama berbulan-bulan bahkan
-                    bertahun-tahun
+                    sumber nafkah mengalami sakit kritis, misalnya jantung,
+                    stroke, kanker, cacat tetap yang menyebabkan tidak bisa lagi
+                    berpenghasilan selama berbulan-bulan bahkan bertahun-tahun
                   </li>
                   <li>
                     pencari nafkah meninggal dunia, padahal anak masih kecil dan
@@ -108,9 +114,9 @@ const DetailArticle = () => {
                   yang mesti kita sadari.
                 </p>
                 <p>
-                  Dalam suatu situasi di mana resiko meningkat, maka resiko untuk
-                  terjadinya sakit, kecacatan, dan meninggal dunia pun makin
-                  meningkat.
+                  Dalam suatu situasi di mana resiko meningkat, maka resiko
+                  untuk terjadinya sakit, kecacatan, dan meninggal dunia pun
+                  makin meningkat.
                 </p>
                 <p>
                   Saya akan bahas satu-persatu dari aspek manfaat sebuah polis:
@@ -121,11 +127,11 @@ const DetailArticle = () => {
                 <p>
                   Biaya pengobatan untuk covid-19 ditanggung pemerintah, namun
                   tidak menutup mata bahwa ada beberapa kejadian di mana sistem
-                  rujukan RS tidak berfungsi atau bed RS yang penuh, mengharuskan
-                  seseorang dirawat di RS swasta. Biaya perawatan corona di RS
-                  bukan biaya yang murah, apalagi bila menggunakan peralatan
-                  canggih seperti ICU dan ventilator.Biayanya bisa menyentuh
-                  angka puluhan bahkan ratusan juta.
+                  rujukan RS tidak berfungsi atau bed RS yang penuh,
+                  mengharuskan seseorang dirawat di RS swasta. Biaya perawatan
+                  corona di RS bukan biaya yang murah, apalagi bila menggunakan
+                  peralatan canggih seperti ICU dan ventilator.Biayanya bisa
+                  menyentuh angka puluhan bahkan ratusan juta.
                 </p>
                 <p>
                   Untuk pemegang polis kesehatan dengan manfaat{" "}
@@ -157,10 +163,10 @@ const DetailArticle = () => {
                 </h4>
                 <p>
                   Suka atau tidak suka, resiko kematian meningkat saat ini
-                  dibandingkan kondisi biasa.Covid-19 bisa menyerang siapa
-                  saja, dan walaupun golongan orang tua dan dengan predisposisi
-                  penyakit tertentu memiliki resiko kematian yang lebih
-                  besar, namun pada dasarnya kematian bisa terjadi pada siapa
+                  dibandingkan kondisi biasa.Covid-19 bisa menyerang siapa saja,
+                  dan walaupun golongan orang tua dan dengan predisposisi
+                  penyakit tertentu memiliki resiko kematian yang lebih besar,
+                  namun pada dasarnya kematian bisa terjadi pada siapa
                   saja.Penting bagi kita untuk mempertahankan bahkan membeli
                   polis asuransi jiwa, terutama jika kita adalah sumber nafkah
                   utama dalam keluarga.Karena akan sanggup bertahan berapa lama
@@ -176,8 +182,8 @@ const DetailArticle = () => {
                   Pada masa pandemi, polis asuransi memegang peranan penting
                   dalam “keamanan keuangan” keluarga anda.Pastikan anda memahami
                   semua polis yang anda miliki dengan konsultasi ulang ke agent
-                  asuransi Anda, atau bahkan menambah polis untuk anda yang masih
-                  memiliki budget keuangan dan memang mempunyai kebutuhan
+                  asuransi Anda, atau bahkan menambah polis untuk anda yang
+                  masih memiliki budget keuangan dan memang mempunyai kebutuhan
                   proteksi.
                 </p>
                 <p>Stay safe. Stay healthy. Keep Protected.</p>

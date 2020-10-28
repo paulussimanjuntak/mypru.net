@@ -1,10 +1,12 @@
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Slider from "react-slick";
 import Button from "antd-button-color";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Image from 'react-bootstrap/Image'
+// import Image from 'react-bootstrap/Image'
 import Container from "react-bootstrap/Container";
 
 import { bannerSettings, testimoniSettings } from "lib/slickSetting";
@@ -21,9 +23,6 @@ const CardArticleMemo = React.memo(CardArticle);
 import { testimoniData } from "data/testimoni";
 import { articleData } from "data/article";
 import { agentData } from "data/agent";
-
-const bannerss = [ "/static/images/banner/pph-banner.png", "/static/images/banner/pss-banner.png", "/static/images/banner/prutop-banner.png", 
-"/static/images/banner/pcb88-banner.png", "/static/images/banner/prucinta-banner.png", "/static/images/banner/pruworks-banner.png" ];
 
 const banners = [
   { image: "/static/images/banner/pph-banner.png", link: "/products/pruprime-healthcare-plus" },
@@ -110,6 +109,7 @@ const Home = () => {
             <Col lg={4} className="text-center">
               <Button type="danger" size="large" shape="round">
                 <a
+                  rel="noreferrer"
                   href="https://payment.prudential.co.id/"
                   target="_blank"
                   className="text-decoration-none"
@@ -145,7 +145,7 @@ const Home = () => {
           <Card.Body className="p-5">
             <Row className="align-items-center">
               <Col sm={12} md={6}>
-                <img src="/static/images/about.jpg" className="w-100 bor-rad-10px" />
+                <img alt="MyPru.net - about" src="/static/images/about.jpg" className="w-100 bor-rad-10px" />
               </Col>
               <Col sm={12} md={6}>
                 <h3 className="fs-20-s mb-4">Tentang Kami</h3>
@@ -162,13 +162,14 @@ const Home = () => {
         <Container>
           <Row className="mb-4">
             {agentData.map((data, i) => (
-              <Col className="text-center mb-3" key={i}>
+              <Col className="text-center mb-3 img-agen" key={i}>
                 <Image 
-                  roundedCircle
-                  width="267"
-                  height="267"
+                  quality={60}
+                  width={267}
+                  height={267}
                   src={data.image} 
-                  className="img-fit mb-2 mb-md-0 mb-lg-0" 
+                  className="img-fit mb-2 mb-md-0 mb-lg-0 rounded-circle" 
+                  alt={`MyPru.net - ${data.name}`}
                 />
                 <h5 className="fs-16-s mt-3">{data.name}</h5>
                 <p>
@@ -184,6 +185,11 @@ const Home = () => {
         :global(.about-section){
           border-radius: 10px;
           background-color: #f5f5f5;
+        }
+
+        :global(.img-agen > div){
+          margin-left: auto;
+          margin-right: auto;
         }
 
         @media only screen and (min-width: 600px) {

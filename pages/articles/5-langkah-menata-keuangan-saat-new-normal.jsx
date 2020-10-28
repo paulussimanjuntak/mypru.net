@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -11,7 +12,13 @@ const DetailArticle = () => {
             <Col lg={8}>
               <Row className="mb-2">
                 <Col lg={12} md={12} sm={12}>
-                  <img src="/static/images/articles/5.jpeg" className="w-100" />
+                  <Image
+                    unsized
+                    quality={60}
+                    alt="MyPru.net | 5 Langkah Menata Keuangan saat New Normal"
+                    src="/static/images/articles/5.jpeg"
+                    className="w-100"
+                  />
                 </Col>
               </Row>
               <h4 className="fs-20-s mb-1">
@@ -94,9 +101,9 @@ const DetailArticle = () => {
                   kondisi pelonggaran akan diperketat kembali.
                 </p>
                 <p>
-                  Kedua, adalah untuk memberikan ketenangan karena situasi krisis
-                  bukan hanya tentang pandemi saja, tetapi juga bisa dalam
-                  kejadian darurat lain, yang membutuhkan pos Dana
+                  Kedua, adalah untuk memberikan ketenangan karena situasi
+                  krisis bukan hanya tentang pandemi saja, tetapi juga bisa
+                  dalam kejadian darurat lain, yang membutuhkan pos Dana
                   Darurat.Misalnya: kerusakan rumah, kerusakan mobil, berobat
                   karena sakit, dll.
                 </p>
@@ -127,8 +134,8 @@ const DetailArticle = () => {
                   rupiah yang kita keluarkan.
                 </p>
                 <p>
-                  Banyak orang menjadi lebih peduli terhadap manajemen
-                  keuangan, dibandingkan masa sebelumnya.
+                  Banyak orang menjadi lebih peduli terhadap manajemen keuangan,
+                  dibandingkan masa sebelumnya.
                 </p>
                 <p>Teruskan kebiasaan positif ini.</p>
                 <p>
@@ -162,9 +169,9 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Melanggar rasio tersebut, apalagi hanya untuk “keinginan” akan
-                  membuat beban keuangan kita semakin meningkat, dan membahayakan
-                  keuangan kita pada saat keadaan ekonomi belum benar-benar
-                  stabil.
+                  membuat beban keuangan kita semakin meningkat, dan
+                  membahayakan keuangan kita pada saat keadaan ekonomi belum
+                  benar-benar stabil.
                 </p>
                 <h5>4. Pastikan proteksi tetap aktif</h5>
                 <p>
@@ -178,13 +185,13 @@ const DetailArticle = () => {
                 <p>Masa pandemi belum selesai.</p>
                 <p>Artinya risiko masih lebih tinggi daripada biasanya.</p>
                 <p>
-                  Jangan sepelekan biaya perawatan akibat infeksi
-                  corona, terutama di RS Swasta.
+                  Jangan sepelekan biaya perawatan akibat infeksi corona,
+                  terutama di RS Swasta.
                 </p>
                 <p>
                   Perawatan corona di RS Swasta bisa menghabiskan biaya puluhan
-                  bahkan ratusan juta rupiah, bila dirawat di ICU dan menggunakan
-                  ventilator.
+                  bahkan ratusan juta rupiah, bila dirawat di ICU dan
+                  menggunakan ventilator.
                 </p>
                 <p>
                   Maka pastikan polis anda tetap aktif, supaya memberikan
@@ -205,14 +212,14 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Namun luar biasanya, banyak juga bisnis dan usaha baru yang
-                  justru tumbuh, seperti bisnis online, sosial media, makanan, alat
-                  kesehatan, multivitamin hingga asuransi.
+                  justru tumbuh, seperti bisnis online, sosial media, makanan,
+                  alat kesehatan, multivitamin hingga asuransi.
                 </p>
                 <p>
                   Mereka yang tidak menyerah bahkan terus belajar dan
-                  mendapatkan skill dan ketrampilan baru selama masa
-                  pandemi, seperti kemampuan digital marketing, pembuatan
-                  website, dan jasa sosial media lainnya.
+                  mendapatkan skill dan ketrampilan baru selama masa pandemi,
+                  seperti kemampuan digital marketing, pembuatan website, dan
+                  jasa sosial media lainnya.
                 </p>
                 <p>
                   Di masa New Normal, keahlian dan ketrampilan yang semuanya
@@ -220,21 +227,21 @@ const DetailArticle = () => {
                   sumber pendapatan baru.
                 </p>
                 <p>
-                  Pertahankan sumber pendapatan anda, bila perlu tambahkan dengan
-                  sumber pendapatan baru.
+                  Pertahankan sumber pendapatan anda, bila perlu tambahkan
+                  dengan sumber pendapatan baru.
                 </p>
                 <p>
                   Kita belajar dari masa pandemi bahwa mereka yang mempunyai
                   sumber pendapatan lebih dari satu{" "}
-                  <em>(multipel source of income)</em> terutama passive
-                  income, mempunyai keuangan yang lebih tahan kriris dibandingkan
-                  yang hanya punya satu sumber pendapatan.
+                  <em>(multipel source of income)</em> terutama passive income,
+                  mempunyai keuangan yang lebih tahan kriris dibandingkan yang
+                  hanya punya satu sumber pendapatan.
                 </p>
                 <p>
                   Mumpung masih dalam usia produktif, segeralah belajar dan
-                  membangun pendapatan-pendapatan yang bersifat
-                  passive-income, supaya keuangan anda lebih stabil dan juga
-                  meraih kebebasan keuangan di masa mendatang.
+                  membangun pendapatan-pendapatan yang bersifat passive-income,
+                  supaya keuangan anda lebih stabil dan juga meraih kebebasan
+                  keuangan di masa mendatang.
                 </p>
                 <h5>Simpulan</h5>
                 <p>

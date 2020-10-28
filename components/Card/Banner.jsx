@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Card from "react-bootstrap/Card";
 
 const CardBanner = ({ image, link }) => {
@@ -7,7 +8,9 @@ const CardBanner = ({ image, link }) => {
       <Card className="border-0">
         <Link href={link} as={link}>
           <a className="text-decoration-none text-dark">
-            <img
+            <Image
+              unsized
+              quality={60}
               className="mx-auto d-block img-fit w-100 rounded-0"
               src={image}
               alt="MyPru"

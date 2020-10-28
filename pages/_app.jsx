@@ -12,9 +12,9 @@ import "react-tiny-fab/dist/styles.css";
 
 import Layout from "components/Layout";
 
-const emailStyle = { backgroundColor: "#1890ff" }
-const waStyle = { backgroundColor: "#25D366" }
-const phoneStyle = { backgroundColor: "#f39c12" }
+const emailStyle = { backgroundColor: "#1890ff" };
+const waStyle = { backgroundColor: "#25D366" };
+const phoneStyle = { backgroundColor: "#f39c12" };
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -22,10 +22,10 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta charSet="UTF-8" />
         <title>MyPru | Your Trusted Insurance Planner</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="Your Trusted Insurance Planner" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_DOMAIN} />
         <link rel="icon" href="/static/images/ico.png" />
         <link rel="stylesheet" href="/static/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="/static/css/utility.min.css" />
@@ -33,24 +33,39 @@ const App = ({ Component, pageProps }) => {
 
       <Layout>
         <Component {...pageProps} />
-        <Fab 
+        <Fab
           alwaysShowTitle={false}
           icon={<i className="far fa-comments fa-lg" />}
           style={{ bottom: 0, right: 0 }}
           event="hover"
         >
           <Action text="Email" style={emailStyle}>
-            <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} target="_blank" className="text-decoration-none text-reset">
+            <a
+              rel="noreferrer"
+              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+              target="_blank"
+              className="text-decoration-none text-reset"
+            >
               <i className="far fa-envelope" />
             </a>
           </Action>
           <Action text="WhatsApp" style={waStyle}>
-            <a href={`https://wa.me/${process.env.NEXT_PUBLIC_TELEPON}`} target="_blank" className="text-decoration-none text-reset">
+            <a
+              rel="noreferrer"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_TELEPON}`}
+              target="_blank"
+              className="text-decoration-none text-reset"
+            >
               <i className="fab fa-lg fa-whatsapp" />
             </a>
           </Action>
           <Action text="Telepon" style={phoneStyle}>
-            <a href={`tel:${process.env.NEXT_PUBLIC_TELEPON}`} target="_blank" className="text-decoration-none text-reset">
+            <a
+              rel="noreferrer"
+              href={`tel:${process.env.NEXT_PUBLIC_TELEPON}`}
+              target="_blank"
+              className="text-decoration-none text-reset"
+            >
               <i className="far fa-phone-alt" />
             </a>
           </Action>
@@ -71,7 +86,7 @@ const App = ({ Component, pageProps }) => {
         .fw-500 {
           font-weight: 500 !important;
         }
-        .text-danger-2{
+        .text-danger-2 {
           color: #cf1322;
         }
         blockquote {
@@ -93,7 +108,7 @@ const App = ({ Component, pageProps }) => {
         .border-type-1 {
           border: 1px solid rgb(0 0 0 / 4%);
         }
-        .bor-rad-10px{
+        .bor-rad-10px {
           border-radius: 10px;
         }
         .truncate-3 {
@@ -111,10 +126,9 @@ const App = ({ Component, pageProps }) => {
           -webkit-box-orient: vertical;
         }
 
-        .rtf.open .rtf--mb>*{
+        .rtf.open .rtf--mb > * {
           transform: rotate(0deg) !important;
         }
-
 
         /* ANT DROPDOWN */
         .ant-dropdown-menu-item,

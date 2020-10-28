@@ -8,7 +8,7 @@ const Testimoni = ({ data }) => {
         <Card.Body className="text-center">
           <p className="mb-0">{data.comment}</p>
           <div className="d-block my-4">
-            <Avatar size={74} src={data.avatar} />
+            <Avatar size={74} src={data.avatar} alt={`MyPru.net - testimoni - ${data.name}`} />
           </div>
           <p className="font-weight-bold mb-0">{data.name}</p>
           <p className="mb-0">{data.job}</p>

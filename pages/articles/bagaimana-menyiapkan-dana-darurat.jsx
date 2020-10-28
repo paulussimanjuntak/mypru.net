@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -11,7 +12,13 @@ const DetailArticle = () => {
             <Col lg={8}>
               <Row className="mb-2">
                 <Col lg={12} md={12} sm={12}>
-                  <img src="/static/images/articles/2.jpg" className="w-100" />
+                  <Image
+                    unsized
+                    quality={60}
+                    alt="MyPru.net | Bagaimana menyiapkan Dana Darurat?"
+                    src="/static/images/articles/2.jpg"
+                    className="w-100"
+                  />
                 </Col>
               </Row>
               <h4 className="fs-20-s mb-1">
@@ -41,8 +48,8 @@ const DetailArticle = () => {
                 </p>
                 <p>
                   Taman, interior, furniture, hiasan rumah itu lebih menarik dan
-                  sedap dibicarakan. Siapa yang membicarakan pondasi rumah, tidak
-                  ada satu orangpun yang membicarakannya.
+                  sedap dibicarakan. Siapa yang membicarakan pondasi rumah,
+                  tidak ada satu orangpun yang membicarakannya.
                 </p>
                 <p>
                   Sama analoginya dengan pondasi keuangan, tidak ada yang
@@ -89,8 +96,8 @@ const DetailArticle = () => {
                 <p>
                   Untuk 2 poin terakhir lebih disarankan dana darurat dalam
                   bentuk asuransi karena biaya kesehatan bisa sedemikian
-                  mahalnya sehingga seringkali melebih pos dana darurat
-                  kita, bahkan bila kita cukup pun menyiapkan dana darurat.
+                  mahalnya sehingga seringkali melebih pos dana darurat kita,
+                  bahkan bila kita cukup pun menyiapkan dana darurat.
                 </p>
                 <h4>Dana Darurat Normal dan Abnormal</h4>
                 <p>
@@ -114,8 +121,8 @@ const DetailArticle = () => {
                 <h3>Berapa besar Dana Darurat yang cukup?</h3>
                 <p>Pertama anda harus hitung dulu pengeluaran rutin anda.</p>
                 <p>
-                  Untuk yang belum menikah, disarankan punya Dana Darurat minimal
-                  3-6 bulan pengeluaran.
+                  Untuk yang belum menikah, disarankan punya Dana Darurat
+                  minimal 3-6 bulan pengeluaran.
                 </p>
                 <p>
                   Untuk yang sudah menikah, disarankan 6-12 bulan pengeluaran.
@@ -124,7 +131,9 @@ const DetailArticle = () => {
                 <p>Simpan di Aset likuiditas anda, seperti:</p>
                 <ul>
                   <li>tabungan</li>
-                  <li>deposito jangka pendek, menengah, panjang (dibagi saja)</li>
+                  <li>
+                    deposito jangka pendek, menengah, panjang (dibagi saja)
+                  </li>
                   <li>reksadana pasar uang (RDPU)</li>
                 </ul>
                 <p>

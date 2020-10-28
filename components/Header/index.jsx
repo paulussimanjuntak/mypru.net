@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { Dropdown, Menu, Drawer } from "antd";
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-import { nasabahMenuData, careerMenuData, productMenuData, mobileNavigation } from "data/navbar";
+import { nasabahMenuData, productMenuData, mobileNavigation } from "data/navbar";
 
 const productMenu = (
   <Menu className="d-none d-lg-block user-select-none">
@@ -27,16 +28,6 @@ const productMenu = (
   </Menu>
 );
 
-const careerMenu = (
-  <Menu className="d-none d-lg-block user-select-none">
-    {careerMenuData.map((data, i) => (
-      <Menu.Item key={i} className="text-capitalize">
-        {data.label}
-      </Menu.Item>
-    ))}
-  </Menu>
-);
-
 const nasabahMenu = (
   <Menu className="d-none d-lg-block user-select-none">
     {nasabahMenuData.map((data, i) => (
@@ -47,6 +38,7 @@ const nasabahMenu = (
           </Link>
         ) : (
           <a
+            rel="noreferrer"
             href="https://payment.prudential.co.id/"
             target="_blank"
             className="text-decoration-none"
@@ -84,11 +76,13 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand href="/" className="font-italic">
-            <img
+            <Image
+              quality={60}
               src="/static/images/logo.png"
-              height="38"
+              width={190}
+              height={38}
               className="d-inline-block align-top"
-              alt="MyPru"
+              alt="MyPru.net - logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle
