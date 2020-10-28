@@ -15,8 +15,15 @@ const TestiClaim = () => {
                   <img src="/static/images/testi-klaim/1.jpeg" className="w-100 mb-3" />
                 </p>
                 <p>
-                  <img src="/static/images/testi-klaim/2.jpg" className="w-100" />
+                  <img src="/static/images/testi-klaim/2.jpg" className="w-100 mb-3" />
                 </p>
+                <div className="embed-responsive embed-responsive-16by9 bor-rad-10px">
+                  <iframe
+                    className="embed-responsive-item"
+                    src="https://www.youtube.com/embed/L6_xAy5P4kI"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </Col>
           </Row>
