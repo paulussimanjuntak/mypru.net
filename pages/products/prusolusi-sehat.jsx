@@ -86,6 +86,21 @@ const ProductItem = () => {
         </Container>
       </section>
 
+      <section className="pt-0">
+        <Container>
+          <Card.Body className="py-0">
+            <Row className="align-items-center justify-content-center">
+              <Col sm={12} md={8}>
+                <img
+                  className="d-block w-100 bor-rad-10px shadow"
+                  src="/static/images/pss.png"
+                />
+              </Col>
+            </Row>
+          </Card.Body>
+        </Container>
+      </section>
+
       <style jsx>{style}</style>
     </>
   )

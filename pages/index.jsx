@@ -70,7 +70,7 @@ const Home = () => {
               </Link>
             </Col>
             <Col lg={6} md={12} sm={12}>
-              <div className="embed-responsive embed-responsive-16by9">
+              <div className="embed-responsive embed-responsive-16by9 bor-rad-10px shadow">
                 <iframe
                   className="embed-responsive-item"
                   src="https://www.youtube.com/embed/zhq4Q53n7PQ"
@@ -168,7 +168,7 @@ const Home = () => {
                   width={267}
                   height={267}
                   src={data.image} 
-                  className="img-fit mb-2 mb-md-0 mb-lg-0 rounded-circle" 
+                  className="img-fit mb-2 mb-md-0 mb-lg-0 rounded-circle shadow" 
                   alt={`MyPru.net - ${data.name}`}
                 />
                 <h5 className="fs-16-s mt-3">{data.name}</h5>

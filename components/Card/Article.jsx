@@ -10,7 +10,6 @@ const Article = ({ article }) => {
             variant="top"
             src={article.image}
             alt="MyPru.net | Your Trusted Insurance Planner"
-            height="10"
             className="img-fit img-article"
           />
         </div>

@@ -13,8 +13,9 @@ const ArticleHorizontalSmall = ({ article }) => {
             <img
               width={64}
               height={64}
-              className="align-self-center m-2 img-fit"
               src={article.image} 
+              className="align-self-center m-2 img-fit"
+              alt="MyPru.net | Your Trusted Insurance Planner"
             />
           </Media>
         </a>

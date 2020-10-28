@@ -21,6 +21,8 @@ const socialMedia = [
   { icon: "fab fa-youtube", link: process.env.NEXT_PUBLIC_YOUTUBE },
 ];
 
+const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A.`
+
 const Footer = () => {
   return (
     <>
@@ -42,6 +44,7 @@ const Footer = () => {
                 {socialMedia.map((data, i) => (
                   <a rel="noreferrer" href={data.link} target="_blank" key={i}>
                     <Button
+                      aria-label="social media"
                       type="lightdark"
                       className="shadow-none"
                       style={{ borderRadius: "5px" }}
@@ -81,12 +84,16 @@ const Footer = () => {
             <Col lg={3} sm={12}>
               <h5 className="footer-title">Kontak Kami</h5>
               <p className="text-footer">
-                <i className="fal fa-phone mr-2" />{" "}
-                {process.env.NEXT_PUBLIC_TELEPON}
+                <a href={linkWA} target="_blank" className="text-decoration-none">
+                  <i className="fal fa-phone mr-2" />{" "}
+                  {process.env.NEXT_PUBLIC_TELEPON}
+                </a>
               </p>
               <p className="text-footer">
-                <i className="fal fa-envelope mr-2" />{" "}
-                {process.env.NEXT_PUBLIC_EMAIL}
+                <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} className="text-decoration-none">
+                  <i className="fal fa-envelope mr-2" />{" "}
+                  {process.env.NEXT_PUBLIC_EMAIL}
+                </a>
               </p>
               <p className="text-footer">
                 <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1
@@ -130,7 +137,7 @@ const Footer = () => {
           margin-bottom: 0.6rem;
         }
         .link-section,
-        .text-footer {
+        .text-footer, .text-footer a {
           color: rgba(0, 0, 0, 0.7);
         }
         .text-footer {
