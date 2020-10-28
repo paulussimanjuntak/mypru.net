@@ -20,7 +20,7 @@ const ProductItem = () => {
               PRUCorporate Personal Accident adalah Asuransi Kecelakaan Diri  Kumpulan yang memberikan perlindungan atas risiko Meninggal Dunia akibat Kecelakaan dengan pilihan manfaat tambahan berupa Cacat Tetap Akibat Kecelakaan Akselerasi dan Penggantian Biaya Medis Akibat Kecelakaan.
             </p>
             <a href={linkWA} target="_blank">
-              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+              <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-personal-accident-agency_190913_FA.PDF" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>

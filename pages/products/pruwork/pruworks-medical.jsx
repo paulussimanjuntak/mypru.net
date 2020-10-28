@@ -19,7 +19,7 @@ const ProductItem = () => {
               PRUWorks Medical merupakan produk asuransi kesehatan kumpulan dari PT Prudential Life Assurance (Prudential Indonesia) bagi nasabah korporasi. Premi yang dibayarkan memberikan manfaat perlindungan kesehatan bagi Tertanggung. Produk ini tersedia dalam mata uang Rupiah dan memberikan Manfaat Asuransi selama Polis masih aktif dan kepesertaan Tertanggung masih berlaku.
             </p>
             <a href={linkWA} target="_blank">
-              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+              <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/2020/PDF/Products/Product-Summary-PRUWorks-Medical_200128_FA.pdf" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>

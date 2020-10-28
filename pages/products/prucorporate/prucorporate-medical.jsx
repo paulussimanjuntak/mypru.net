@@ -20,7 +20,7 @@ const ProductItem = () => {
               PRUCorporate Medical adalah Perlindungan Asuransi Kesehatan Kumpulan yang memberikan penggantian biaya medis untuk Rawat Inap dengan pilihan manfaat tambahan berupa Persalinan, Rawat Jalan, Perawatan Gigi dan Kacamata*.
             </p>
             <a href={linkWA} target="_blank">
-              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+              <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-medical-agency_190913_FA.PDF" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>

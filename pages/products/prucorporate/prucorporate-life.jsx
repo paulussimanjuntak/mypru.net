@@ -20,7 +20,7 @@ const ProductItem = () => {
               PRUCorporate Life merupakan Asuransi Jiwa Kumpulan yang memberikan perlindungan atas risiko Meninggal Dunia karena sakit atau kecelakaan dengan pilihan manfaat tambahan berupa Cacat Total dan Tetap, 61 Penyakit Kritis, 8 Terminal Illness Akselerasi, dan Meninggal Dunia akibat Kecelakaan*.
             </p>
             <a href={linkWA} target="_blank">
-              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+              <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-life-agency_190913_FA.PDF" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>

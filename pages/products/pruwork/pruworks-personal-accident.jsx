@@ -19,7 +19,7 @@ const ProductItem = () => {
               PRUWorks Personal Accident merupakan produk asuransi kecelakaan diri kumpulan dari PT Prudential Life Assurance (Prudential Indonesia) bagi nasabah korporasi. Premi yang dibayarkan memberikan manfaat perlindungan (proteksi) manfaat meninggal akibat kecelakaan. Produk ini tersedia dalam mata uang Rupiah dan memberikan Manfaat Asuransi selama Polis masih aktif.
             </p>
             <a href={linkWA} target="_blank">
-              <Button type="success" className="shadow-none mr-2">Info Lebih Lanjut</Button>
+              <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
             <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/2020/PDF/Products/Product-Summary-PRUWorks-Personal-Accident_200128_FA.pdf" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>
