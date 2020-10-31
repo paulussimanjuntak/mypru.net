@@ -6,21 +6,16 @@ import Button from "antd-button-color";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-// import Image from 'react-bootstrap/Image'
 import Container from "react-bootstrap/Container";
 
-import { bannerSettings, testimoniSettings } from "lib/slickSetting";
+import { bannerSettings } from "lib/slickSetting";
 
 import CardBanner from "components/Card/Banner";
 const CardBannerMemo = React.memo(CardBanner);
 
-import CardTestimoni from "components/Card/Testimoni";
-const CardTestimoniMemo = React.memo(CardTestimoni);
-
 import CardArticle from "components/Card/ArticleHome";
 const CardArticleMemo = React.memo(CardArticle);
 
-import { testimoniData } from "data/testimoni";
 import { articleData } from "data/article";
 import { agentData } from "data/agent";
 
@@ -81,16 +76,6 @@ const Home = () => {
           </Row>
         </section>
 
-        <section className="testimoni-section">
-          <h3 className="fs-20-s text-center mb-4">Testimonials</h3>
-          <Slider {...testimoniSettings}>
-            {testimoniData.map((testimoni, i) => (
-              <Col key={i}>
-                <CardTestimoniMemo data={testimoni} />
-              </Col>
-            ))}
-          </Slider>
-        </section>
       </Container>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>

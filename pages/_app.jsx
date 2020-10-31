@@ -16,6 +16,8 @@ const emailStyle = { backgroundColor: "#1890ff" };
 const waStyle = { backgroundColor: "#25D366" };
 const phoneStyle = { backgroundColor: "#f39c12" };
 
+const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Hi%2C%20Saya%20ingin%20mengetahui%20lebih%20lanjut%3A%0ANama%3A%20%0AUsia%3A%20%0APekerjaan%3A%20%0APesan%3A%20`
+
 const App = ({ Component, pageProps }) => {
   return (
     <>
@@ -52,7 +54,7 @@ const App = ({ Component, pageProps }) => {
           <Action text="WhatsApp" style={waStyle}>
             <a
               rel="noreferrer"
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_TELEPON}`}
+              href={linkWA}
               target="_blank"
               className="text-decoration-none text-reset"
             >

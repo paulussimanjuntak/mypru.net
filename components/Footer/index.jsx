@@ -54,8 +54,7 @@ const Footer = () => {
                 ))}
               </Space>
               <p className="text-footer mt-2 mb-0">
-                MyPru adalah salah satu dari sekian banyak agen asuransi
-                Prudential di Indonesia lewat komunitas atau agency MRT Group.
+                MyPru.net merupakan Konsultan Asuransi yang berpatner dengan Prudential indonesia untuk memberikan Solusi Asuransi kepada seluruh masyarakat indonesia dengan didukung digital teknologi sehingga memberikan pelayanan lebih cepat dan efisien.
               </p>
             </Col>
             <Col lg={3} sm={12} className="pl-lg-5">
@@ -96,8 +95,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-footer">
-                <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1
-                Denpasar, Bali, Indonesia 80228
+                <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1 Denpasar, Bali, Indonesia 80228
               </p>
             </Col>
             <Col lg={2} sm={12}>

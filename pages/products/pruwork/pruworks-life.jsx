@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 import style from 'components/Products/detailStyle'
 
 const title = "PRUWorks Life"
-const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Nama%3A%20%0AUmur%3A%0APekerjaan%3A.`
+const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Hi%2C%20Saya%20ingin%20mengetahui%20lebih%20lanjut%3A%0ANama%3A%20%0AUsia%3A%20%0APekerjaan%3A%20%0APesan%3A%20`
 
 const ProductItem = () => {
   return(
