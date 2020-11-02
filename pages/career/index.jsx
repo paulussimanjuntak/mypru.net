@@ -4,6 +4,8 @@ import Button from 'antd-button-color'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 
+const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Hi%2C%20Saya%20ingin%20mengetahui%20lebih%20lanjut%3A%0ANama%3A%20%0AUsia%3A%20%0APekerjaan%3A%20%0APesan%3A%20`
+
 const Career = () => {
   return(
     <>
@@ -17,7 +19,7 @@ const Career = () => {
                   Profesi Agen Asuransi merupakan salah satu profesi yang menjanjikan masa depan yang baik, apabila profesi ini dijalani dengan komitmen, kesungguhan, dan mindset yang tepat. Pertumbuhan karir juga menjadi salah satu yang bisa anda dapatkan di Industri Bisnis Asuransi Prudential. <br /> <br />
                   Industri Asuransi Prudential juga merupakan salah satu industri yang unik, karena tidak banyak industri yang ketika anda memulai menjalaninya, itu juga berarti anda memiliki sebuah BISNIS baru yang merupakan milik anda sendiri. Yang mana anda memiliki akses produk yang bermanfaat, dan anda mendapatkan kebebasan untuk berkreasi sendiri untuk menjual produk asuransi dengan cara yang menurut anda terbaik.
                   <br /> <br />
-                  <a href="https://api.whatsapp.com/send?phone=6281423763267&text=Nama%3A%20%0AUmur%3A%20" target="_blank">
+                  <a href={linkWA} target="_blank">
                     <Button
                       type="success"
                       size="large"
@@ -30,7 +32,7 @@ const Career = () => {
                 </p>
               </Col>
               <Col sm={12} md={12} lg={6} className="order-1 order-md-1 order-lg-12 order-xl-12">
-                <img src="/static/images/career.jpg" className="w-100 bor-rad-10px mb-4" />
+                <img src="/static/images/career2.jpeg" className="w-100 bor-rad-10px mb-4" />
               </Col>
             </Row>
           </Card.Body>

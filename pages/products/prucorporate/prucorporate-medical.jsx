@@ -22,10 +22,10 @@ const ProductItem = () => {
             <a href={linkWA} target="_blank">
               <Button type="success" className="shadow-none mr-2 mb-2">Info Lebih Lanjut</Button>
             </a>
-            <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/Products/Product-Summary-PRUcorporate-medical-agency_190913_FA.PDF" target="_blank">
+            <a href="https://www.prudential.co.id/export/sites/prudential-id/id/.galleries/pdf/product/prucorporate-product-summary-medical-agency-190913.pdf" target="_blank">
               <Button type="danger" className="mr-2">Unduh Informasi Produk</Button>
             </a>
-            <a href="https://www.prudential.co.id/export/sites/prudential-id/.galleries/PDF/FA_Pru_Corporate_Medical_Booklet_13x21_2019_Medium.pdf" target="_blank">
+            <a href="https://www.prudential.co.id/export/sites/prudential-id/id/.galleries/pdf/product/prucorporate-medical-booklet-medium.pdf" target="_blank">
               <Button type="danger" className="mt-2" ghost>Unduh Brosur</Button>
             </a>
           </div>
