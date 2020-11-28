@@ -10,6 +10,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "react-tiny-fab/dist/styles.css";
 
+import Router from "next/router";
+import withFBQ from "next-fbq";
+
 import Layout from "components/Layout";
 
 const emailStyle = { backgroundColor: "#1890ff" };
@@ -194,4 +197,4 @@ App.getInitialProps = async ({ Component, ctx }) => {
   return { pageProps };
 };
 
-export default App;
+export default withFBQ(process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID, Router)(App);
