@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Fab, Action } from "react-tiny-fab";
 import Head from "next/head";
 
@@ -10,9 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "react-tiny-fab/dist/styles.css";
 
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import withFBQ from "next-fbq";
 import Layout from "components/Layout";
+import * as gtag from '../lib/gtag'
 
 const emailStyle = { backgroundColor: "#1890ff" };
 const waStyle = { backgroundColor: "#25D366" };
@@ -21,6 +23,18 @@ const phoneStyle = { backgroundColor: "#f39c12" };
 const linkWA = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Hi%2C%20Saya%20ingin%20mengetahui%20lebih%20lanjut%3A%0ANama%3A%20%0AUsia%3A%20%0APekerjaan%3A%20%0APesan%3A%20`
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <>
       <Head>
