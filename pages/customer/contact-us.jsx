@@ -12,13 +12,13 @@ import Container from "react-bootstrap/Container";
 
 const contactForm = {
   name: { value: "", isValid: true, message: null },
-  noWa: { value: "", isValid: true, message: null },
+  phone: { value: "", isValid: true, message: null },
   message: { value: "", isValid: true, message: null },
 };
 
 const formIsValid = (state, setState) => {
   const name = { ...state.name };
-  const noWa = { ...state.noWa };
+  const phone = { ...state.phone };
   const message = { ...state.message };
   let isGood = true;
 
@@ -28,21 +28,21 @@ const formIsValid = (state, setState) => {
     isGood = false;
   }
 
-  if (validator.isEmpty(noWa.value.toString())) {
-    noWa.isValid = false;
-    noWa.message = "No. WhatsApp tidak boleh kosong";
+  if (validator.isEmpty(phone.value.toString())) {
+    phone.isValid = false;
+    phone.message = "No. WhatsApp tidak boleh kosong";
     isGood = false;
   }
 
-  if (!validator.isLength(noWa.value.toString(), { min: 3, max: 20 })) {
-    noWa.isValid = false;
-    noWa.message = "No. WhatsApp harus diantara 3 - 20 karakter";
+  if (!validator.isLength(phone.value.toString(), { min: 3, max: 20 })) {
+    phone.isValid = false;
+    phone.message = "No. WhatsApp harus diantara 3 - 20 karakter";
     isGood = false;
   }
 
-  if (!validator.isInt(noWa.value.toString())) {
-    noWa.isValid = false;
-    noWa.message = "No. WhatsApp tidak valid";
+  if (!validator.isInt(phone.value.toString())) {
+    phone.isValid = false;
+    phone.message = "No. WhatsApp tidak valid";
     isGood = false;
   }
 
@@ -52,7 +52,7 @@ const formIsValid = (state, setState) => {
     isGood = false;
   }
 
-  if (!isGood) setState({ ...state, name, noWa, message });
+  if (!isGood) setState({ ...state, name, phone, message });
   return isGood;
 };
 
@@ -82,40 +82,51 @@ const ContacUs = () => {
     if (formIsValid(contactUs, setContactUs)) {
       const data = {
         name: contactUs.name.value,
-        noWa: contactUs.noWa.value,
+        phone: contactUs.phone.value,
         message: contactUs.message.value,
       };
 
       setLoading(true);
 
       axios
-        .post("/api/contact", data)
+        .post(`${process.env.NEXT_PUBLIC_API}/send-email`, data)
         .then((res) => {
           setLoading(false);
-          if (res.data === "Pesan terkirim") {
-            notification["success"]({
-              message: "Success",
-              description: res.data,
-              placement: "bottomRight",
-            });
-            setContactUs(contactForm);
-          } else {
-            notification["error"]({
-              message: "Oppss...",
-              description: "Pesan gagal terkirim, coba lagi",
-              placement: "bottomRight",
-            });
-          }
+          notification["success"]({
+            message: "Success",
+            description: res.data.message,
+            placement: "bottomRight",
+          });
+          setContactUs(contactForm);
         })
-        .catch(() => {
+        .catch((err) => {
           setLoading(false);
+          const errDetail = err.response.data.detail;
+          if (typeof errDetail === "string") {
+            notification["error"]({
+              message: "Error",
+              description: errDetail,
+              placement: "bottomRight",
+            });
+          } else {
+            const state = JSON.parse(JSON.stringify(contactUs));
+            errDetail.map((data) => {
+              const key = data.loc[data.loc.length - 1];
+              if (state[key]) {
+                state[key].value = state[key].value;
+                state[key].isValid = false;
+                state[key].message = data.msg;
+              }
+            });
+            setContactUs(state);
+          }
         });
     }
   };
 
-  const { name, noWa, message } = contactUs;
+  const { name, phone, message } = contactUs;
   const invalidName = cx({ "is-invalid": !name.isValid });
-  const invalidNoWa = cx({ "is-invalid": !noWa.isValid });
+  const invalidNoWa = cx({ "is-invalid": !phone.isValid });
   const invalidMessage = cx({ "is-invalid": !message.isValid });
 
   return (
@@ -133,6 +144,7 @@ const ContacUs = () => {
                       <Form.Label>Nama</Form.Label>
                       <Form.Control
                         name="name"
+                        placeholder="Nama"
                         value={name.value}
                         className={invalidName}
                         onChange={onChangeHandler}
@@ -148,15 +160,16 @@ const ContacUs = () => {
                     <Form.Group>
                       <Form.Label>No. WhatsApp</Form.Label>
                       <Form.Control
-                        name="noWa"
-                        value={noWa.value}
+                        name="phone"
+                        placeholder="+62 8123456789"
+                        value={phone.value}
                         className={invalidNoWa}
                         onChange={onChangeHandler}
-                        type="number"
+                        type="text"
                       />
-                      {!noWa.isValid && (
+                      {!phone.isValid && (
                         <Form.Text className="text-muted fs-12 mb-n1 mt-0">
-                          {noWa.message}
+                          {phone.message}
                         </Form.Text>
                       )}
                     </Form.Group>
@@ -165,6 +178,7 @@ const ContacUs = () => {
                       <Form.Label>Pesan</Form.Label>
                       <Form.Control
                         name="message"
+                        placeholder="Pesan"
                         value={message.value}
                         className={invalidMessage}
                         onChange={onChangeHandler}
@@ -222,6 +236,11 @@ const ContacUs = () => {
         :global(.product-item:hover){
           transform: scale(1.01);
           box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
+        :global(.form-control::placeholder) {
+          color: black;
+          opacity: 0.3;
         }
       `}</style>
     </>
