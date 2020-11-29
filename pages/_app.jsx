@@ -12,7 +12,6 @@ import "react-tiny-fab/dist/styles.css";
 
 import Router from "next/router";
 import withFBQ from "next-fbq";
-
 import Layout from "components/Layout";
 
 const emailStyle = { backgroundColor: "#1890ff" };
