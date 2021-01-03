@@ -120,7 +120,7 @@ const Footer = () => {
           <hr />
         </Container>
         <Container>
-          <p className="pb-3">
+          <p className="pb-3 text-center">
             Copyright &copy; {year.getFullYear()} All Rights Reserved by{" "}
             <a href="/" className="link-section">
               MyPru.net
