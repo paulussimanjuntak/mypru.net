@@ -25,7 +25,14 @@ export const productMenuData = [
     label: "Persiapan Dana Waris",
     children: [
       { label: "PRUCinta", link: "prucinta" },
+      { label: "PRUWarisan", link: "pruwarisan" },
       { label: "Paper Assets", link: "paperassets" },
+    ]
+  },
+  {
+    label: "Persiapan Dana Pendidikan Anak",
+    children: [
+      { label: "PRUCerah", link: "prucerah" },
     ]
   },
   {

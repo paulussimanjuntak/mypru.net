@@ -25,6 +25,8 @@ const banners = [
   { image: "/static/images/banner/prutop-banner.png", link: "/products/prutotal-critical-protection" },
   { image: "/static/images/banner/pcb88-banner.png", link: "/products/prucritical-benefit-88" },
   { image: "/static/images/banner/prucinta-banner.png", link: "/products/prucinta" },
+  { image: "/static/images/banner/pruwarisan-banner.png", link: "/products/pruwarisan" },
+  { image: "/static/images/banner/prucerah-banner.png", link: "/products/prucerah" },
   { image: "/static/images/banner/pruworks-banner.png", link: "/products/pruwork" },
 ]
 
@@ -78,30 +80,36 @@ const Home = () => {
 
       </Container>
 
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section className="py-5" style={{ backgroundColor: "#f5f5f5" }}>
         <Container>
+          <h3 className="fs-20-s mb-4 text-center">Testimoni Kami</h3>
           <Row className="align-items-center">
-            <Col lg={8}>
-              <h4 className="fs-20-s">
-                Bayar Premi/Kontribusi Kini Lebih Mudah!
-              </h4>
-              <p className="fs-16 fs-14-s text-dark mb-lg-0">
-                Pembayaran Premi/Kontribusi dan Biaya Perubahan Polis, serta
-                pendaftaran autodebit untuk kartu kredit dan kartu debit,
-                sekarang dapat dilakukan di sini.
-              </p>
+            <Col lg={4} md={12} sm={12}>
+              <div className="embed-responsive embed-responsive-16by9 mb-4 mb-lg-3">
+                <iframe
+                  allowFullScreen
+                  className="embed-responsive-item bor-rad-10px"
+                  src="https://www.youtube.com/embed/F4NzFcJ5xyw"
+                />
+              </div>
             </Col>
-            <Col lg={4} className="text-center">
-              <Button type="danger" size="large" shape="round">
-                <a
-                  rel="noreferrer"
-                  href="https://payment.prudential.co.id/"
-                  target="_blank"
-                  className="text-decoration-none"
-                >
-                  Bayar Sekarang
-                </a>
-              </Button>
+            <Col lg={4} md={12} sm={12}>
+              <div className="embed-responsive embed-responsive-16by9 mb-4 mb-lg-3">
+                <iframe
+                  allowFullScreen
+                  className="embed-responsive-item bor-rad-10px"
+                  src="https://www.youtube.com/embed/pOr6jRs69Go"
+                />
+              </div>
+            </Col>
+            <Col lg={4} md={12} sm={12}>
+              <div className="embed-responsive embed-responsive-16by9 mb-4 mb-lg-3">
+                <iframe
+                  allowFullScreen
+                  className="embed-responsive-item bor-rad-10px"
+                  src="https://www.youtube.com/embed/xr6U7CvO0LU"
+                />
+              </div>
             </Col>
           </Row>
         </Container>

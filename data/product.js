@@ -41,7 +41,30 @@ export const productsData = [
     `,
     products: [
       { label: "Asuransi Jiwa Syariah PRUCinta", icon: "fal fa-gift", link: "prucinta" },
+      { label: "PRUWarisan", icon: "fal fa-scroll-old", link: "pruwarisan" },
       { label: "Paper Assets", icon: "fal fa-file-alt", link: "paperassets" },
+    ]
+  },
+  {
+    title: "Persiapan Dana Pendidikan Anak",
+    description: 
+    `
+      <p>
+        Memperkenalkan Asuransi Jiwa Syariah <span style="color: #ff0000">
+        <strong><span class="">PRU</span></strong></span>Cerah Produk
+        Asuransi Dwiguna yang memberikan Perlindungan atas
+        Jaminan Pendidikan Anak atau orang yang Anda sayangi.
+        Terdapat Manfaat Dana Pendidikan, yang memberikan
+        manfaat berupa Penarikan Tunai Sekaligus serta Penarikan
+        Tunai Bulanan selama 4 tahun. Selain itu untuk menjamin
+        keberlangsungan Pendidikan Anak Anda maka produk ini
+        memberikan Manfaat Bebas Kontribusi jika Anda Meninggal
+        Dunia, Terkena Kondisi Kritis atau mengalami Cacat Tetap
+        dan Total.
+      </p>
+    `,
+    products: [
+      { label: "PRUCerah", icon: "fal fa-books", link: "prucerah" },
     ]
   },
   {
