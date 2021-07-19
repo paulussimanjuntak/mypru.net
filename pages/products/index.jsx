@@ -37,7 +37,7 @@ const Product = () => {
                 <div dangerouslySetInnerHTML={{__html: data.description}} />
                 <Row>
                   {data.products && data.products.length > 0 && data.products.map((product, i) => (
-                    <Col key={i} sm={12} md={12} lg={6} className="product-col mt-lg-0 mb-3">
+                    <Col key={i} sm={12} md={12} lg={6} className="product-col mt-0 mb-3">
                       <Card className="h-100 product-item hover-pointer" onClick={() => router.push(`/products/${product.link}`)}>
                         <Card.Body>
                           <Media className="align-items-center h-100">
